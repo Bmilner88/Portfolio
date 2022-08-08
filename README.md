@@ -4,11 +4,12 @@
 
 This is my professional portfolio using React.
 
-* [GitHub Pages Deployment](https://bmilner88.github.io/react-portfolio/)
+* [Heroku Deployment](https://bm-professional-portfolio.herokuapp.com/)
 
 - Built With:
     * JavaScript
     * Node.js
     * React.js
+    * Nodemailer
 
-![screenshot](./public/screenshot.png)
+![screenshot](./client/src/assets/images/screenshot.png)
