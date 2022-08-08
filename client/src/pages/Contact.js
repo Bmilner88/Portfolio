@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 
-//import { validateEmail } from '../utils/helpers';
-
 export default function Contact(){
-    const [formState, setFormState] = useState({ name: '', email: '', message: ''});
+    const [formState, setFormState] = useState({ name: '', email: '', message: '' });
+
+    let [message, setMessage] = useState({ status: false, text: '' });
 
     const handleSubmit = async (e) => {
         e.preventDefault();
@@ -18,17 +18,26 @@ export default function Contact(){
         .then(res => res.json())
         .then(async res => {
             const resData = await res;
-
             if(resData.status === 'success') {
                 console.log('Message sent');
+
+                setMessage ({
+                    status: true,
+                    text: 'Message sent!'
+                });
+
                 setFormState({
                     name: '',
                     email: '',
                     message: ''
                 });
             } else if (res.status === 'fail') {
+                setMessage({
+                    status: true,
+                    text: res.message
+                });
                 console.log(`Message failed to send: ${res.message}`)
-            }
+            };
         });
     };
 
@@ -73,11 +82,12 @@ export default function Contact(){
                         value={formState.message}
                         onChange={handleChange}
                     />
-                    {/* {errorMessage && (
-                        <div id='error'>
-                            <p className='error-text'>{errorMessage}</p>
+
+                    {message.status && (
+                        <div id='messageState'>
+                            <p className='message-text'>{message.text}</p>
                         </div>
-                    )} */}
+                    )}
 
                     <button id='submit' className='btn' data-testid='button' type='submit'>Submit</button>
                 </form>
