@@ -15,7 +15,7 @@ app.use(cors());
 app.use(express.static(path.join(__dirname, 'client/build')));
 
 app.get('*', (req, res) => {
-  res.sendfile(express.static(path.join(__dirname, '../client/build/index.html')));
+  res.sendFile(path.join(__dirname, '../client/build/index.html'));
 });
 
 let transporter = nodemailer.createTransport({
