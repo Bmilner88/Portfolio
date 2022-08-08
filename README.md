@@ -4,7 +4,7 @@
 
 This is my professional portfolio using React.
 
-* [Heroku Deployment](https://bm-professional-portfolio.herokuapp.com/)
+* <a href="https://bm-professional-portfolio.herokuapp.com/" target="_blank">Heroku Deployment</a>
 
 - Built With:
     * JavaScript
