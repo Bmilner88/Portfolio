@@ -1,5 +1,6 @@
 const express = require('express');
 const cors = require('cors');
+const path = require('path');
 const nodemailer = require('nodemailer');
 require('dotenv').config();
 
@@ -10,6 +11,14 @@ const app = express();
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 app.use(cors());
+
+if (process.env.NODE_ENV === 'production') {
+  app.use(express.static(path.join(__dirname, '../client/build')));
+}
+
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname, '../client/build/index.html'));
+});
 
 let transporter = nodemailer.createTransport({
     service: 'gmail',
@@ -29,7 +38,7 @@ transporter.verify((err, success) => {
         : console.log(`Server is ready to take messages: ${success}`)
 });
 
-app.post('/send', function (req, res) {
+app.post('/api/send', (req, res) => {
     let mailOptions = {
         from: `${req.body.email}`,
         to: process.env.EMAIL,

@@ -1,5 +1,5 @@
 {
-  "name": "react-portfolio",
+  "name": "portfolio",
   "version": "1.0.0",
   "description": "",
   "main": "server/server.js",
@@ -7,19 +7,21 @@
     "start": "node server/server.js",
     "react": "cd client && npm start",
     "develop": "concurrently \"cd server && npm start\" \"cd client && npm start\"",
-    "install": "cd server && npm i && cd ../client && npm i"
+    "install": "cd server && npm i && cd ../client && npm i",
+    "seed": "cd server && npm run seed",
+    "build": "cd client && npm run build"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Bmilner88/react-portfolio.git"
+    "url": "git+https://github.com/Bmilner88/portfolio.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Bmilner88/react-portfolio/issues"
+    "url": "https://github.com/Bmilner88/portfolio/issues"
   },
-  "homepage": "https://github.com/Bmilner88/react-portfolio#readme",
+  "homepage": "https://github.com/Bmilner88/portfolio#readme",
   "devDependencies": {
     "concurrently": "^7.2.1"
   }
