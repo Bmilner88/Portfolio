@@ -1,47 +1,51 @@
-import React, { useState } from 'react';
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+
 import Nav from './components/Nav';
 import Header from './components/Header';
 import Footer from './components/Footer';
+
 import About from './pages/About';
 import Contact from './pages/Contact';
 import Projects from './pages/Projects';
 import Resume from './pages/Resume';
+import NoMatch from './pages/NoMatch';
+
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 
+
 function App() {
-  const [currentPage, setCurrentPage] = useState('About');
-
-  const renderPage = () => {
-      if (currentPage === 'About') {
-        return <About />;
-      }
-      else if (currentPage === 'Contact') {
-        return <Contact />;
-      }
-      else if (currentPage === 'Projects') {
-        return <Projects />;
-      }
-      else if (currentPage === 'Resume') {
-        return <Resume />
-      }
-      else {
-        return <About />;
-      }
-  };
-
-  const handlePageChange = (page) => setCurrentPage(page);
-
   return(
-    <div className='App flex-column justify-flex-start'>
+    <Router>
+      <div className='App flex-column justify-flex-start'>
         <Header />
-        <Nav currentPage={currentPage} handlePageChange={handlePageChange} />
-
-        <main>
-            {renderPage()}
-        </main>
+          <Nav />
+          <Routes>
+            <Route
+              path='/'
+              element={<About />}
+            />
+            <Route
+              path='/projects'
+              element={<Projects />}
+            />
+            <Route
+              path='/resume'
+              element={<Resume />}
+            />
+            <Route
+              path='/contact'
+              element={<Contact />}
+            />
+            <Route
+              path='*'
+              element={<NoMatch />}
+            />
+          </Routes>
         <Footer />
-    </div>
+      </div>
+    </Router>
   );
 };
 
