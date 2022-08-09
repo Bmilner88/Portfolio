@@ -11,7 +11,7 @@ import Projects from './pages/Projects';
 import Resume from './pages/Resume';
 import NoMatch from './pages/NoMatch';
 
-//import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 
 

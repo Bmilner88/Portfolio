@@ -53,44 +53,51 @@ export default function Contact(){
     return(
         <section className='page'>
             <h2 className='contact'>Contact Me</h2>
-                <form id='contact-form' onSubmit={handleSubmit}>
-                    <input
-                        className="form-input"
-                        placeholder="Name"
-                        name="name"
-                        type="name"
-                        id="name"
-                        value={formState.name}
-                        onChange={handleChange}
-                    />
-                    <input
-                        className="form-input"
-                        placeholder="Email"
-                        name="email"
-                        type="email"
-                        id="email"
-                        value={formState.email}
-                        onChange={handleChange}
-                    />
-                    <input
-                        className="form-input"
-                        placeholder="Message"
-                        name="message"
-                        type="message"
-                        id="message"
-                        rows='3'
-                        value={formState.message}
-                        onChange={handleChange}
-                    />
+                <form id='contact-form' className='container col-lg-6 offset-lg-3' onSubmit={handleSubmit}>
+                    <div className='row justify-content-center'>
+                    <div className='form-group'>
+                        <label for='name'>Name</label>
+                        <input
+                            className='form-control'
+                            placeholder='John Doe'
+                            id='name'
+                            value={formState.name}
+                            onChange={handleChange}
+                        />
+                    </div>
 
+                    <div className='form-group'>
+                        <label for='email'>Email</label>
+                        <input
+                            className='form-control'
+                            placeholder='name@example.com'
+                            type='email'
+                            id='email'
+                            value={formState.email}
+                            onChange={handleChange}
+                        />
+                    </div>
+                    
+                    <div className='form-group'>
+                        <label for='message'>Message</label>
+                        <textarea
+                            className='form-control'
+                            placeholder='Message...'
+                            id='message'
+                            rows='10'
+                            value={formState.message}
+                            onChange={handleChange}
+                        />
+                    </div>
+                    
+                    <button id='submit' className='btn' data-testid='button' type='submit'>Submit</button>
+                    </div>
+                </form>
                     {message.status && (
                         <div id='messageState'>
                             <p className='message-text'>{message.text}</p>
                         </div>
                     )}
-
-                    <button id='submit' className='btn' data-testid='button' type='submit'>Submit</button>
-                </form>
         </section>      
     );
 };
