@@ -38,7 +38,7 @@ transporter.verify((err, success) => {
         : console.log(`Server is ready to take messages: ${success}`)
 });
 
-app.post('/api/send', function (req, res) {
+app.post('/api/send', (req, res) => {
     let mailOptions = {
         from: `${req.body.email}`,
         to: process.env.EMAIL,
