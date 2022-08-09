@@ -26,7 +26,12 @@ nav {
   list-style: none;
 }
 
-.proficiencies, .about, .projects, .resume, .contact, #aboutP {
+.proficiencies,
+.about,
+.projects,
+.resume,
+.contact,
+#aboutP {
   margin-top: 3%;
   list-style: none;
 }
@@ -42,7 +47,8 @@ nav {
   padding-left: 0;
 }
 
-#submit, .btn {
+#submit,
+.btn {
   margin-top: 30px;
   border: none;
   color: var(--tertiary-color);
@@ -50,7 +56,8 @@ nav {
   transition-duration: 0.2s;
 }
 
-#submit:hover, .btn:hover {
+#submit:hover,
+.btn:hover {
   color: var(--primary-color);
   background-color: var(--tertiary-color);
 }
@@ -76,7 +83,7 @@ nav {
 }
 
 .nav-link:hover {
-  color: var(--secondary-color)
+  color: var(--secondary-color);
 }
 
 .bottom-cards {
@@ -88,7 +95,7 @@ nav {
 }
 
 footer {
-  color:var(--primary-color);
+  color: var(--primary-color);
   background-color: var(--tertiary-color);
   position: fixed;
   left: 0;
@@ -96,7 +103,7 @@ footer {
   right: 0;
 }
 
-footer a{
+footer a {
   text-decoration: none;
   color: #94ebc5;
 }
