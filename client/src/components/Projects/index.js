@@ -2,10 +2,10 @@ import React from "react";
 
 export default function Projects() {
   return (
-    <div className="projects">
-      <h2>Portfolio</h2>
+    <div className="pt-5" id="projects">
       <div className="container">
         <div className="row">
+          <h2>Projects</h2>
           <div className="card m-5 col">
             <div className="card-body">
               <a
@@ -17,7 +17,7 @@ export default function Projects() {
               </a>
               <img
                 id="regal"
-                src={require(`../assets/images/regal.png`)}
+                src={require(`../../assets/images/regal.png`)}
                 alt="Regal"
                 className="card-img"
               />
@@ -44,7 +44,7 @@ export default function Projects() {
               </a>
               <img
                 id="budgetek"
-                src={require(`../assets/images//budgetek.png`)}
+                src={require(`../../assets/images//budgetek.png`)}
                 alt="ShowPro"
                 className="card-img"
               />
@@ -69,7 +69,7 @@ export default function Projects() {
               </a>
               <img
                 id="showpro"
-                src={require(`../assets/images/showpro.png`)}
+                src={require(`../../assets/images/showpro.png`)}
                 alt="ShowPro"
                 className="card-img"
               />
@@ -96,7 +96,7 @@ export default function Projects() {
               </a>
               <img
                 id="sfcc-xml"
-                src={require(`../assets/images/sfcc-xml.png`)}
+                src={require(`../../assets/images/sfcc-xml.png`)}
                 alt="SFCC Customer Group XML Gen"
                 className="card-img"
               />
@@ -121,7 +121,7 @@ export default function Projects() {
               </a>
               <img
                 id="code=quiz"
-                src={require(`../assets/images/code-quiz.png`)}
+                src={require(`../../assets/images/code-quiz.png`)}
                 alt="Code Quiz"
                 className="card-img-top"
               />
@@ -146,7 +146,7 @@ export default function Projects() {
               </a>
               <img
                 id="weather-dashboard"
-                src={require(`../assets/images/weather-dashboard.png`)}
+                src={require("../../assets/images/weather-dashboard.png")}
                 alt="Weather Dashboard"
                 className="card-img"
               />

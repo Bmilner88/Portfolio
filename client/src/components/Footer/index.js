@@ -2,16 +2,22 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <footer>
+    <footer className="mt-auto">
       <a
         href="https://www.linkedin.com/in/ben-milner-b20171142/"
         target="_blank"
         rel="noreferrer"
+        className="link-dark text-decoration-none"
       >
         LinkedIn Profile
       </a>{" "}
       {"|"}{" "}
-      <a href="https://github.com/Bmilner88" target="_blank" rel="noreferrer">
+      <a
+        href="https://github.com/Bmilner88"
+        target="_blank"
+        rel="noreferrer"
+        className="link-dark text-decoration-none"
+      >
         GitHub Profile
       </a>{" "}
       {"|"}{" "}
@@ -19,6 +25,7 @@ const Footer = () => {
         href="https://stackoverflow.com/users/19388818/ben-milner"
         target="_blank"
         rel="noreferrer"
+        className="link-dark text-decoration-none"
       >
         StackOverflow Profile
       </a>
