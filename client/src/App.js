@@ -1,26 +1,19 @@
 import React from "react";
-//import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { useSpring, animated } from "@react-spring/web";
 
-//import Nav from "./components/Nav";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 
-/* import Main from "./pages/Main";
-import About from "./pages/About";
-import Contact from "./pages/Contact";
-import Projects from "./pages/Projects";
-import Resume from "./pages/Resume";
-import NoMatch from "./pages/NoMatch"; */
-
-import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 
 function App() {
+  const aboutProps = useSpring({ from: { opacity: 0 }, to: { opacity: 1 }, config: {duration: 600} });
+
   return (
     <div className="App justify-flex-start d-flex flex-column min-vh-100">
       <Header />
       <div className="container mt-5">
-        <div className="row align-items-center">
+        <animated.div style={aboutProps} className="row align-items-center">
           <div className="col-5">
             <img
               className="img-fluid rounded"
@@ -43,7 +36,7 @@ function App() {
             travel and am looking forward to one day visiting a country outside
             of the US.
           </p>
-        </div>
+        </animated.div>
       </div>
       <Footer />
     </div>

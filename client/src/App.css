@@ -26,8 +26,11 @@
   text-align: center;
 }
 
+.btn-header,
+.btn-header:hover,
 .btn-header:focus,
-.btn-header:active{
+.btn-header:active {
     box-shadow:none !important;
     outline:0px !important;
+    border: none;
 }
