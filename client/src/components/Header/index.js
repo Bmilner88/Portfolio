@@ -19,6 +19,14 @@ const Header = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
+    if(!formState.name || !formState.email || !formState.message) {
+      setMessage({
+        sent: true,
+        text: "Please make sure all fields are filled out!",
+      });
+      return;
+    }
+
     await fetch("/api/send", {
       method: "POST",
       headers: {
