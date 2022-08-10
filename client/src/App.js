@@ -3,6 +3,7 @@ import { useSpring, animated } from "@react-spring/web";
 
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+import Projects from "./components/Projects";
 
 import "./App.css";
 
@@ -21,6 +22,7 @@ function App() {
               alt="Ben Milner"
             />
           </div>
+          <div className="col-1"></div>
           <p className="col about-text">
             Hi there! My name is Ben Milner, and I am seeking employment in the
             field of Web Development. I am well qualified, having completed a
@@ -37,6 +39,9 @@ function App() {
             of the US.
           </p>
         </animated.div>
+      </div>
+      <div className="container mt-5">
+        <Projects />
       </div>
       <Footer />
     </div>

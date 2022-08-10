@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Modal from "react-bootstrap/Modal";
+import pdf from "../../assets/pdf/resume.pdf";
 
 const Header = () => {
   const [show, setShow] = useState(false);
@@ -68,9 +69,14 @@ const Header = () => {
         <div className="row align-items-center">
           <h1 className="col span_3 header-name">Ben Milner</h1>
           <div className="col span_9 col_last align-items-center">
-            <a href="/projects">
+            <a href="#projects">
               <button className="btn btn-header link-dark contact-btn">
                 Projects
+              </button>
+            </a>
+            <a href={pdf} target="_blank" rel="noreferrer">
+              <button className="btn btn-header link-dark contact-btn">
+                Resume
               </button>
             </a>
             <button
@@ -122,7 +128,7 @@ const Header = () => {
                         className="form-control"
                         name="message"
                         type="text"
-                        rows="10"
+                        rows="8"
                         value={formState.message}
                         onChange={handleChange}
                       />
