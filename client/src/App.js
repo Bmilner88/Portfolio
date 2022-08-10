@@ -8,12 +8,16 @@ import Projects from "./components/Projects";
 import "./App.css";
 
 function App() {
-  const aboutProps = useSpring({ from: { opacity: 0 }, to: { opacity: 1 }, config: {duration: 600} });
+  const aboutProps = useSpring({
+    from: { opacity: 0 },
+    to: { opacity: 1 },
+    config: { duration: 600 },
+  });
 
   return (
     <div className="App justify-flex-start d-flex flex-column min-vh-100">
       <Header />
-      <div className="container mt-5">
+      <div className="container mt-5 pb-5">
         <animated.div style={aboutProps} className="row align-items-center">
           <div className="col-5">
             <img
