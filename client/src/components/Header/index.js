@@ -16,6 +16,7 @@ const Header = () => {
 
   let [message, setMessage] = useState({ sent: false, text: "" });
 
+
   const handleSubmit = async (e) => {
     e.preventDefault();
 

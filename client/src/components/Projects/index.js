@@ -4,7 +4,7 @@ import Slide from "react-reveal/Slide";
 export default function Projects() {
   return (
     <div className="pt-5" id="projects">
-      <div className="container">
+      <div className="container-fluid">
         <div className="row">
           <h2>Projects</h2>
           <div className="card m-5 col">
