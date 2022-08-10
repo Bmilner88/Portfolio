@@ -1,113 +1,33 @@
-:root {
-  --primary-color: #94ebc5;
-  --secondary-color: #08472b;
-  --tertiary-color: #525252;
-}
-
 .App {
+  font-family: 'Roboto', sans-serif;
   text-align: center;
 }
 
-.App-header {
-  background-color: var(--tertiary-color);
-  color: var(--primary-color);
-  height: 50px;
+.nav-list-item {
+  list-style-type: none;
 }
 
-nav {
-  display: flex;
-  justify-content: center;
-  padding-right: 10px;
-  background-color: var(--tertiary-color);
+.about-text {
+  text-align: left;
 }
 
-.listEl {
-  text-decoration: none;
-  list-style: none;
+.contact-btn {
+  outline: none;
+  box-shadow: none;
 }
 
-.proficiencies,
-.about,
-.projects,
-.resume,
-.contact,
-#aboutP {
-  margin-top: 3%;
-  list-style: none;
+#contact-title, #contact-body, #contact-buttons {
+  font-family: 'Roboto', sans-serif;
 }
 
-.aboutPage {
-  display: flex;
-  flex-wrap: wrap;
-  margin: 3%;
-  justify-content: center;
+#message-sent {
+  font-size: larger;
+  font-weight: 800;
+  text-align: center;
 }
 
-.proficiencies {
-  padding-left: 0;
-}
-
-#submit,
-.btn {
-  margin-top: 30px;
-  border: none;
-  color: var(--tertiary-color);
-  background-color: var(--primary-color);
-  transition-duration: 0.2s;
-}
-
-#submit:hover,
-.btn:hover {
-  color: var(--primary-color);
-  background-color: var(--tertiary-color);
-}
-
-.card-header {
-  color: var(--secondary-color);
-  transition-duration: 0.2s;
-}
-
-.card-header:hover {
-  color: var(--primary-color);
-}
-
-.card-body a {
-  text-decoration: none;
-}
-
-.nav-link {
-  text-decoration: none;
-  color: var(--primary-color);
-  background-color: #08472b;
-  transition-duration: 0.2s;
-}
-
-.nav-link:hover {
-  color: var(--secondary-color);
-}
-
-.bottom-cards {
-  margin-bottom: 30px;
-}
-
-.message-sent {
-  margin-top: 20px;
-}
-
-footer {
-  color: var(--primary-color);
-  background-color: var(--tertiary-color);
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  right: 0;
-}
-
-footer a {
-  text-decoration: none;
-  color: #94ebc5;
-}
-
-footer a:hover {
-  color: #08472b;
+.btn-header:focus,
+.btn-header:active{
+    box-shadow:none !important;
+    outline:0px !important;
 }
