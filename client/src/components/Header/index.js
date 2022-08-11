@@ -16,6 +16,7 @@ const Header = () => {
 
   let [message, setMessage] = useState({ sent: false, text: "" });
 
+
   const handleSubmit = async (e) => {
     e.preventDefault();
 
@@ -75,8 +76,9 @@ const Header = () => {
     <header>
       <div className="container-lg mt-3">
         <div className="row align-items-center">
-          <h1 className="col span_3 header-name">Ben Milner</h1>
-          <div className="col span_9 col_last align-items-center">
+          <h1 className="col-5 header-name">Ben Milner</h1>
+          <div className="col-1"></div>
+          <div className="col-6 align-items-center">
             <a href="#projects">
               <button className="btn btn-header link-dark contact-btn">
                 Projects

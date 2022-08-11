@@ -1,14 +1,14 @@
 import React from "react";
-import Slide from "react-reveal/Slide";
+import Fade from "react-reveal/Fade";
 
 export default function Projects() {
   return (
     <div className="pt-5" id="projects">
-      <div className="container">
+      <div className="container-fluid">
         <div className="row">
           <h2>Projects</h2>
-          <div className="card m-5 col">
-            <Slide top>
+          <div className="m-5 col">
+            <Fade left>
               <div className="card-body">
                 <a
                   href="https://regal-help.herokuapp.com/"
@@ -32,12 +32,10 @@ export default function Projects() {
                   View on GitHub
                 </a>
               </div>
-            </Slide>
+            </Fade>
           </div>
-        </div>
-        <div className="row">
-          <div className="card m-5 col">
-            <Slide top>
+          <div className="m-5 col">
+            <Fade right>
               <div className="card-body">
                 <a
                   href="https://quiet-tundra-30236.herokuapp.com/"
@@ -61,10 +59,12 @@ export default function Projects() {
                   View on GitHub
                 </a>
               </div>
-            </Slide>
+            </Fade>
           </div>
-          <div className="card m-5 col">
-            <Slide top>
+        </div>
+        <div className="row">
+          <div className="m-5 col">
+            <Fade left>
               <div className="card-body">
                 <a
                   href="https://BlinkingHeimdall.github.io/show-pro/"
@@ -88,12 +88,10 @@ export default function Projects() {
                   View on GitHub
                 </a>
               </div>
-            </Slide>
+            </Fade>
           </div>
-        </div>
-        <div className="row bottom-cards">
-          <div className="card m-5 col">
-            <Slide top>
+          <div className="m-5 col">
+            <Fade right>
               <div className="card-body">
                 <a
                   href="https://bmilner88.github.io/sfcc-cg-xml-gen/"
@@ -117,10 +115,12 @@ export default function Projects() {
                   View on GitHub
                 </a>
               </div>
-            </Slide>
+            </Fade>
           </div>
-          <div className="project card m-5 col">
-            <Slide top>
+        </div>
+        <div className="row bottom-cards">
+          <div className="m-5 col">
+            <Fade left>
               <div className="card-body">
                 <a
                   href="https://bmilner88.github.io/c4-code-quiz/"
@@ -144,10 +144,10 @@ export default function Projects() {
                   View on GitHub
                 </a>
               </div>
-            </Slide>
+            </Fade>
           </div>
-          <div className="project card m-5 col">
-            <Slide top>
+          <div className="m-5 col">
+            <Fade right>
               <div className="card-body">
                 <a
                   href="https://bmilner88.github.io/c6-weather-dashboard/"
@@ -171,7 +171,7 @@ export default function Projects() {
                   View on GitHub
                 </a>
               </div>
-            </Slide>
+            </Fade>
           </div>
         </div>
       </div>
