@@ -74,7 +74,7 @@ const Header = () => {
 
   return (
     <header>
-      <div className="container-lg mt-3">
+      <div className="container-lg mt-3 pb-5">
         <div className="row align-items-center">
           <h1 className="col-5 header-name">Ben Milner</h1>
           <div className="col-1"></div>

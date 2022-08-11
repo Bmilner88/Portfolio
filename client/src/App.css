@@ -34,3 +34,7 @@
     outline:0px !important;
     border: none;
 }
+
+.about-container {
+  min-height: 100vh;
+}
