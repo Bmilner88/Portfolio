@@ -3,7 +3,8 @@ import { useSpring, animated } from "@react-spring/web";
 
 import Header from "./components/Header";
 import Footer from "./components/Footer";
-import Projects from "./components/Projects";
+import Portfolio from "./components/Portfolio";
+//import Projects from "./components/Projects";
 
 import "./App.css";
 
@@ -17,17 +18,17 @@ function App() {
   return (
     <div className="App justify-flex-start d-flex flex-column min-vh-100">
       <Header />
-      <div className="container mt-5 pb-5">
+      <div className="container pb-5">
         <animated.div style={aboutProps} className="row align-items-center">
-          <div className="col-5">
+          <div className="col-sm-5 mt-5">
             <img
               className="img-fluid rounded"
               src={require("./assets/images/main/ben-milner.jpg")}
               alt="Ben Milner"
             />
           </div>
-          <div className="col-1"></div>
-          <p className="col about-text">
+          <div className="col-sm-1 mt-5"></div>
+          <p className="col-sm about-text">
             Hi there! My name is Ben Milner, and I am seeking employment in the
             field of Web Development. I am well qualified, having completed a
             Full-Stack Web Development Boot Camp through the University of Utah
@@ -45,7 +46,7 @@ function App() {
         </animated.div>
       </div>
       <div className="container mt-5">
-        <Projects />
+        <Portfolio />
       </div>
       <Footer />
     </div>

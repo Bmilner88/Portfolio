@@ -7,7 +7,7 @@ export default function Projects() {
       <div className="container-fluid">
         <div className="row">
           <h2>Projects</h2>
-          <div className="card m-5 col">
+          <div className="m-5 col">
             <Fade left>
               <div className="card-body">
                 <a
@@ -34,7 +34,7 @@ export default function Projects() {
               </div>
             </Fade>
           </div>
-          <div className="card m-5 col">
+          <div className="m-5 col">
             <Fade right>
               <div className="card-body">
                 <a
@@ -63,7 +63,7 @@ export default function Projects() {
           </div>
         </div>
         <div className="row">
-          <div className="card m-5 col">
+          <div className="m-5 col">
             <Fade left>
               <div className="card-body">
                 <a
@@ -90,7 +90,7 @@ export default function Projects() {
               </div>
             </Fade>
           </div>
-          <div className="card m-5 col">
+          <div className="m-5 col">
             <Fade right>
               <div className="card-body">
                 <a
@@ -119,7 +119,7 @@ export default function Projects() {
           </div>
         </div>
         <div className="row bottom-cards">
-          <div className="project card m-5 col">
+          <div className="m-5 col">
             <Fade left>
               <div className="card-body">
                 <a
@@ -146,7 +146,7 @@ export default function Projects() {
               </div>
             </Fade>
           </div>
-          <div className="project card m-5 col">
+          <div className="m-5 col">
             <Fade right>
               <div className="card-body">
                 <a
