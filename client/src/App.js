@@ -9,7 +9,7 @@ import "./App.css";
 
 function App() {
   return (
-    <div className="App justify-flex-start d-flex flex-column min-vh-100">
+    <div className="App justify-flex-start">
       <Header />
       <div className="container about-container">
         <Fade>
