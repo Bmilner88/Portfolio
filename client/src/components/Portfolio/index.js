@@ -5,6 +5,7 @@ export default function Portfolio() {
   return (
     <div className="pt-5" id="projects">
       <div className="container-fluid">
+        <h2>Portfolio</h2>
         <div className="row">
           <Fade left>
             <div className="col-sm-6">

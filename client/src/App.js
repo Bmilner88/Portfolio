@@ -4,7 +4,6 @@ import { useSpring, animated } from "@react-spring/web";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Portfolio from "./components/Portfolio";
-//import Projects from "./components/Projects";
 
 import "./App.css";
 
@@ -18,7 +17,7 @@ function App() {
   return (
     <div className="App justify-flex-start d-flex flex-column min-vh-100">
       <Header />
-      <div className="container pb-5">
+      <div className="container pb-5 about-container">
         <animated.div style={aboutProps} className="row align-items-center">
           <div className="col-sm-5 mt-5">
             <img
