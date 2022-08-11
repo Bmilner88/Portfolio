@@ -12,38 +12,34 @@ export default function Portfolio() {
                 <h3 className="text-center">Regal</h3>
                 <a
                   href="https://regal-help.herokuapp.com/"
-                  className="btn btn-primary btn-block"
                   target="_blank"
                   rel="noreferrer"
                 >
-                  View Deployment
+                  <img
+                    src={require(`../../assets/images/regal.png`)}
+                    className="img-fluid rounded"
+                    alt="Regal Website"
+                  ></img>
                 </a>
               </div>
-              <img
-                src={require(`../../assets/images/regal.png`)}
-                className="img-fluid rounded"
-                alt="Regal Website"
-              ></img>
             </div>
           </Fade>
           <Fade right>
             <div className="col-sm-6">
               <div className="project-caption">
-                <h3 className="text-center">Regal</h3>
+                <h3 className="text-center">Budgetek</h3>
                 <a
-                  href="https://regal-help.herokuapp.com/"
-                  className="btn btn-primary btn-block"
+                  href="https://quiet-tundra-30236.herokuapp.com/"
                   target="_blank"
                   rel="noreferrer"
                 >
-                  View Deployment
+                  <img
+                    src={require(`../../assets/images//budgetek.png`)}
+                    className="img-fluid rounded"
+                    alt="Regal Website"
+                  ></img>
                 </a>
               </div>
-              <img
-                src={require(`../../assets/images/regal.png`)}
-                className="img-fluid rounded"
-                alt="Regal Website"
-              ></img>
             </div>
           </Fade>
         </div>
@@ -51,41 +47,37 @@ export default function Portfolio() {
           <Fade left>
             <div className="col-sm-6">
               <div className="project-caption">
-                <h3 className="text-center">Regal</h3>
+                <h3 className="text-center">ShowPro</h3>
                 <a
-                  href="https://regal-help.herokuapp.com/"
-                  className="btn btn-primary btn-block"
+                  href="https://BlinkingHeimdall.github.io/show-pro/"
                   target="_blank"
                   rel="noreferrer"
                 >
-                  View Deployment
+                  <img
+                    src={require(`../../assets/images/showpro.png`)}
+                    className="img-fluid rounded"
+                    alt="Regal Website"
+                  ></img>
                 </a>
               </div>
-              <img
-                src={require(`../../assets/images/regal.png`)}
-                className="img-fluid rounded"
-                alt="Regal Website"
-              ></img>
             </div>
           </Fade>
           <Fade right>
             <div className="col-sm-6">
               <div className="project-caption">
-                <h3 className="text-center">Regal</h3>
+                <h3 className="text-center">Weather Dashboard</h3>
                 <a
-                  href="https://regal-help.herokuapp.com/"
-                  className="btn btn-primary btn-block"
+                  href="https://bmilner88.github.io/c6-weather-dashboard/"
                   target="_blank"
                   rel="noreferrer"
                 >
-                  View Deployment
+                  <img
+                    src={require(`../../assets/images/weatherdashboard.png`)}
+                    className="img-fluid rounded"
+                    alt="Regal Website"
+                  ></img>
                 </a>
               </div>
-              <img
-                src={require(`../../assets/images/regal.png`)}
-                className="img-fluid rounded"
-                alt="Regal Website"
-              ></img>
             </div>
           </Fade>
         </div>
