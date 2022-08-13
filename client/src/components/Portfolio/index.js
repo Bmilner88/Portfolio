@@ -3,7 +3,7 @@ import Fade from "react-reveal/Fade";
 
 export default function Portfolio() {
   return (
-    <div className="pt-5" id="projects">
+    <div className="pt-5">
       <div className="container-fluid">
         <h2>Portfolio</h2>
         <div className="row">

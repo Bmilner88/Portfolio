@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import Fade from "react-reveal/Fade";
 
 import Header from "./components/Header";
@@ -8,9 +8,11 @@ import Portfolio from "./components/Portfolio";
 import "./App.css";
 
 function App() {
+  const projectsRef = useRef(null);
+
   return (
     <div className="App justify-flex-start">
-      <Header />
+      <Header projectsRef={projectsRef} />
       <div className="container about-container">
         <Fade>
           <div className="row align-items-center">
@@ -41,7 +43,7 @@ function App() {
           </div>
         </Fade>
       </div>
-      <div className="container mt-5">
+      <div className="container mt-5" ref={projectsRef}>
         <Portfolio />
       </div>
       <Footer />
