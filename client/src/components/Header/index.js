@@ -1,8 +1,11 @@
 import React, { useState } from "react";
 import Modal from "react-bootstrap/Modal";
+
 import pdf from "../../assets/pdf/resume.pdf";
 
-const Header = () => {
+const Header = ({ projectsRef }) => {
+  const scrollToElement = () => projectsRef.current.scrollIntoView();
+
   const [show, setShow] = useState(false);
 
   const handleClose = () => setShow(false);
@@ -16,11 +19,10 @@ const Header = () => {
 
   let [message, setMessage] = useState({ sent: false, text: "" });
 
-
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    if(!formState.name || !formState.email || !formState.message) {
+    if (!formState.name || !formState.email || !formState.message) {
       setMessage({
         sent: true,
         text: "Please make sure all fields are filled out!",
@@ -79,11 +81,12 @@ const Header = () => {
           <h1 className="col-5 header-name">Ben Milner</h1>
           <div className="col-1"></div>
           <div className="col-6 align-items-center">
-            <a href="#projects">
-              <button className="btn btn-header link-dark contact-btn">
-                Projects
-              </button>
-            </a>
+            <button
+              className="btn btn-header link-dark contact-btn"
+              onClick={scrollToElement}
+            >
+              Projects
+            </button>
             <a href={pdf} target="_blank" rel="noreferrer">
               <button className="btn btn-header link-dark contact-btn">
                 Resume
