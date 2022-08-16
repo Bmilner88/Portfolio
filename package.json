@@ -26,6 +26,7 @@
     "concurrently": "^7.2.1"
   },
   "dependencies": {
+    "bootstrap-icons": "^1.9.1",
     "react-reveal": "^1.2.2"
   }
 }

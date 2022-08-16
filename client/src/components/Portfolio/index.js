@@ -9,7 +9,7 @@ export default function Portfolio() {
         <div className="row">
           <Fade left>
             <div className="col-sm-6">
-              <div className="project-caption">
+              <div className="project-caption m-3">
                 <h3 className="text-center">Regal</h3>
                 <a
                   href="https://regal-help.herokuapp.com/"
@@ -27,7 +27,7 @@ export default function Portfolio() {
           </Fade>
           <Fade right>
             <div className="col-sm-6">
-              <div className="project-caption">
+              <div className="project-caption m-3">
                 <h3 className="text-center">Budgetek</h3>
                 <a
                   href="https://quiet-tundra-30236.herokuapp.com/"
@@ -44,10 +44,10 @@ export default function Portfolio() {
             </div>
           </Fade>
         </div>
-        <div className="row mt-5 pb-5">
+        <div className="row">
           <Fade left>
             <div className="col-sm-6">
-              <div className="project-caption">
+              <div className="project-caption m-3">
                 <h3 className="text-center">ShowPro</h3>
                 <a
                   href="https://BlinkingHeimdall.github.io/show-pro/"
@@ -64,8 +64,8 @@ export default function Portfolio() {
             </div>
           </Fade>
           <Fade right>
-            <div className="col-sm-6">
-              <div className="project-caption">
+            <div className="col-sm-6 pb-3">
+              <div className="project-caption m-3">
                 <h3 className="text-center">Weather Dashboard</h3>
                 <a
                   href="https://bmilner88.github.io/c6-weather-dashboard/"
