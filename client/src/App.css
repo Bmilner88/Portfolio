@@ -35,6 +35,20 @@
     border: none;
 }
 
-.about-container {
-  min-height: 100vh;
+footer {
+  text-align: center;
+  font-size: 25px;
+  min-height: 50px;
+}
+
+@media only screen and (min-width: 1200px) {
+  .about-container {
+    min-height: 100vh;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .about-container {
+    min-height: 100vh;
+  }
 }

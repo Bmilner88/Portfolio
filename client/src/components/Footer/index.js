@@ -9,7 +9,9 @@ const Footer = () => {
         rel="noreferrer"
         className="link-dark text-decoration-none"
       >
-        LinkedIn Profile
+        <span>
+          <i class="bi bi-linkedin"></i>
+        </span>
       </a>{" "}
       {"|"}{" "}
       <a
@@ -18,7 +20,9 @@ const Footer = () => {
         rel="noreferrer"
         className="link-dark text-decoration-none"
       >
-        GitHub Profile
+        <span>
+          <i class="bi bi-github"></i>
+        </span>
       </a>{" "}
       {"|"}{" "}
       <a
@@ -27,7 +31,9 @@ const Footer = () => {
         rel="noreferrer"
         className="link-dark text-decoration-none"
       >
-        StackOverflow Profile
+        <span>
+          <i class="bi bi-stack-overflow"></i>
+        </span>
       </a>
     </footer>
   );

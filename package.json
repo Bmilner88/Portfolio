@@ -1,7 +1,7 @@
 {
   "name": "portfolio",
   "version": "1.0.0",
-  "description": "",
+  "private": true,
   "main": "server/server.js",
   "scripts": {
     "start": "node server/server.js",
@@ -26,6 +26,7 @@
     "concurrently": "^7.2.1"
   },
   "dependencies": {
+    "bootstrap-icons": "^1.9.1",
     "react-reveal": "^1.2.2"
   }
 }

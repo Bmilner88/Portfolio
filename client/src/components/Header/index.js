@@ -86,12 +86,14 @@ const Header = ({ projectsRef }) => {
               onClick={scrollToElement}
             >
               Projects
-            </button>
+            </button>{" "}
+            {"|"}{" "}
             <a href={pdf} target="_blank" rel="noreferrer">
               <button className="btn btn-header link-dark contact-btn">
                 Resume
               </button>
-            </a>
+            </a>{" "}
+            {"|"}{" "}
             <button
               className="btn btn-header link-dark contact-btn"
               onClick={handleShow}
