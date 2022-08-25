@@ -12,7 +12,7 @@ export default function Portfolio() {
               <div className="project-caption m-3">
                 <h3 className="text-center">Skyscape</h3>
                 <a
-                  href="https://bm-skyscape.herokuapp.com/"
+                  href="https://bm-skyscape.onrender.com/"
                   target="_blank"
                   rel="noreferrer"
                 >
