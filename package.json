@@ -9,7 +9,7 @@
     "develop": "concurrently \"cd server && npm start\" \"cd client && npm start\"",
     "install": "cd server && npm i && cd ../client && npm i",
     "seed": "cd server && npm run seed",
-    "build": "cd client && yarn build"
+    "build": "cd client && npm run build"
   },
   "repository": {
     "type": "git",
