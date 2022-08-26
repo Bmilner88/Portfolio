@@ -20,7 +20,9 @@ app.use(cors());
   res.sendFile(path.join(__dirname, "../client/build/index.html"));
 }); */
 
-app.get("*", (req, res) => res.type("html").send(path.join(__dirname, "../client/build/index.html")));
+/* app.get("*", (req, res) => {
+  res.json({ message: "hello from express" })
+}); */
 
 let transporter = nodemailer.createTransport({
   service: "gmail",
