@@ -30,7 +30,7 @@ const Header = ({ projectsRef }) => {
       return;
     }
 
-    await fetch("/api/send", {
+    await fetch("https://bm-contact-api.onrender.com/api/send", {
       method: "POST",
       headers: {
         "Content-type": "application/json",
