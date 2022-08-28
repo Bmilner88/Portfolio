@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <footer className="mt-auto">
       <a
-        href="https://www.linkedin.com/in/ben-milner-b20171142/"
+        href="https://www.linkedin.com/in/bmilner88"
         target="_blank"
         rel="noreferrer"
         className="link-dark text-decoration-none"
