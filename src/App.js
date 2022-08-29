@@ -1,5 +1,5 @@
 import React, { useRef } from "react";
-import Fade from "react-reveal/Fade";
+import { Fade } from "react-awesome-reveal";
 
 import Header from "./components/Header";
 import Footer from "./components/Footer";
