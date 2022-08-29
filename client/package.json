@@ -1,43 +1,15 @@
 {
   "name": "portfolio",
   "version": "0.1.0",
-  "homepage": "https://bm-professional-portfolio.onrender.com/",
-  "proxy": "https://bm-portfolio-api.onrender.com:10000/",
+  "homepage": "https://bm-professional-portfolio.herokuapp.com/",
+  "proxy": "127.0.0.1:3001",
   "private": true,
-<<<<<<< HEAD
-=======
-  "main": "server/server.js",
-  "scripts": {
-    "start": "node server/server.js",
-    "react": "cd client && npm start",
-    "develop": "concurrently \"cd server && npm start\" \"cd client && npm start\"",
-    "install": "cd server && npm i && cd ../client && npm i",
-    "seed": "cd server && npm run seed",
-    "build": "cd client && npm run build"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Bmilner88/portfolio.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Bmilner88/portfolio/issues"
-  },
-  "homepage": "https://github.com/Bmilner88/portfolio#readme",
-  "devDependencies": {
-    "concurrently": "^7.2.1"
-  },
->>>>>>> main
   "dependencies": {
-    "@emotion/react": "^11.10.0",
     "@react-spring/web": "^9.5.2",
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.3.0",
     "@testing-library/user-event": "^13.5.0",
     "react": "^18.1.0",
-    "react-awesome-reveal": "^4.0.1",
     "react-bootstrap": "^2.4.0",
     "react-dom": "^18.1.0",
     "react-router-dom": "^6.3.0",

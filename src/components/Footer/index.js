@@ -4,7 +4,11 @@ const Footer = () => {
   return (
     <footer className="mt-auto">
       <a
+<<<<<<< HEAD:src/components/Footer/index.js
         href="https://www.linkedin.com/in/bmilner88/"
+=======
+        href="https://www.linkedin.com/in/bmilner88"
+>>>>>>> main:client/src/components/Footer/index.js
         target="_blank"
         rel="noreferrer"
         className="link-dark text-decoration-none"
