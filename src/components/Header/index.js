@@ -3,8 +3,6 @@ import Modal from "react-bootstrap/Modal";
 
 import pdf from "../../assets/pdf/resume.pdf";
 
-const API_KEY = process.env.REACT_APP_API_KEY;
-
 const Header = ({ projectsRef }) => {
   const scrollToElement = () => projectsRef.current.scrollIntoView();
 
@@ -32,7 +30,7 @@ const Header = ({ projectsRef }) => {
       return;
     }
 
-    await fetch(`https://bm-portfolio-api.onrender.com/api/send/${API_KEY}`, {
+    await fetch(`https://bm-portfolio-api.onrender.com/api/send/`, {
       method: "POST",
       headers: {
         "Content-type": "application/json",
