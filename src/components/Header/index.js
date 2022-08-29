@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Fade } from "react-awesome-reveal";
 import Modal from "react-bootstrap/Modal";
 
 import pdf from "../../assets/pdf/resume.pdf";
@@ -17,7 +18,11 @@ const Header = ({ projectsRef }) => {
     message: "",
   });
 
-  let [message, setMessage] = useState({ sent: false, text: "" });
+  let [message, setMessage] = useState({
+    sent: false,
+    text: "",
+    loading: false,
+  });
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -29,6 +34,12 @@ const Header = ({ projectsRef }) => {
       });
       return;
     }
+
+    setMessage({
+      sent: true,
+      text: "Sending...",
+      loading: true,
+    });
 
     await fetch(`https://bm-portfolio-api.onrender.com/api/send/`, {
       method: "POST",
@@ -44,6 +55,7 @@ const Header = ({ projectsRef }) => {
           setMessage({
             sent: true,
             text: "Message sent!",
+            loading: false,
           });
 
           setFormState({
@@ -55,6 +67,7 @@ const Header = ({ projectsRef }) => {
           setMessage({
             sent: true,
             text: `Message failed to send, code: ${res.message.code}`,
+            loading: false,
           });
         }
       });
@@ -148,10 +161,20 @@ const Header = ({ projectsRef }) => {
                         onChange={handleChange}
                       />
                     </div>
-                    {message.sent && (
-                      <div id="message-sent" className="mt-4">
-                        <p>{message.text}</p>
-                      </div>
+                    {message.sent && message.loading && (
+                      <Fade>
+                        <div id="message-sent" className="mt-4">
+                          <p>{message.text}</p>
+                        </div>
+                      </Fade>
+                    )}
+
+                    {message.sent && !message.loading && (
+                      <Fade>
+                        <div id="message-sent" className="mt-4">
+                          <p>{message.text}</p>
+                        </div>
+                      </Fade>
                     )}
                   </div>
                 </form>
