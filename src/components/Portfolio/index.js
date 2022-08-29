@@ -1,5 +1,5 @@
 import React from "react";
-import Fade from "react-reveal/Fade";
+import { Fade } from "react-awesome-reveal";
 
 export default function Portfolio() {
   return (
@@ -7,8 +7,8 @@ export default function Portfolio() {
       <div className="container-fluid">
         <h2>Portfolio</h2>
         <div className="row">
-          <Fade left>
-            <div className="col-sm-6 pb-3">
+          <div className="col-sm pb-3">
+            <Fade direction="left">
               <div className="project-caption m-3">
                 <h3 className="text-center">Skyscape</h3>
                 <a
@@ -23,10 +23,10 @@ export default function Portfolio() {
                   ></img>
                 </a>
               </div>
-            </div>
-          </Fade>
-          <Fade right>
-            <div className="col-sm-6">
+            </Fade>
+          </div>
+          <div className="col-sm">
+            <Fade direction="right">
               <div className="project-caption m-3">
                 <h3 className="text-center">Regal</h3>
                 <a
@@ -41,43 +41,43 @@ export default function Portfolio() {
                   ></img>
                 </a>
               </div>
-            </div>
-          </Fade>
-          <div className="row">
-            <Fade left>
-              <div className="col-sm-6">
-                <div className="project-caption m-3">
-                  <h3 className="text-center">Budgetek</h3>
-                  <a
-                    href="https://quiet-tundra-30236.herokuapp.com/"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <img
-                      src={require(`../../assets/images/portfolio/budgetek.png`)}
-                      className="img-fluid rounded"
-                      alt="Budgetek website"
-                    ></img>
-                  </a>
-                </div>
+            </Fade>
+          </div>
+        </div>
+        <div className="row">
+          <div className="col-sm">
+            <Fade direction="left">
+              <div className="project-caption m-3">
+                <h3 className="text-center">Budgetek</h3>
+                <a
+                  href="https://quiet-tundra-30236.herokuapp.com/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <img
+                    src={require(`../../assets/images/portfolio/budgetek.png`)}
+                    className="img-fluid rounded"
+                    alt="Budgetek website"
+                  ></img>
+                </a>
               </div>
             </Fade>
-            <Fade right>
-              <div className="col-sm-6">
-                <div className="project-caption m-3">
-                  <h3 className="text-center">ShowPro</h3>
-                  <a
-                    href="https://BlinkingHeimdall.github.io/show-pro/"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <img
-                      src={require(`../../assets/images/portfolio/showpro.png`)}
-                      className="img-fluid rounded"
-                      alt="ShowPro website"
-                    ></img>
-                  </a>
-                </div>
+          </div>
+          <div className="col-sm">
+            <Fade direction="right">
+              <div className="project-caption m-3">
+                <h3 className="text-center">ShowPro</h3>
+                <a
+                  href="https://BlinkingHeimdall.github.io/show-pro/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <img
+                    src={require(`../../assets/images/portfolio/showpro.png`)}
+                    className="img-fluid rounded"
+                    alt="ShowPro website"
+                  ></img>
+                </a>
               </div>
             </Fade>
           </div>
