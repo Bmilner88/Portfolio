@@ -12,4 +12,4 @@ This is my professional portfolio using React.
     * React.js
     * Nodemailer
 
-![screenshot](./client/src/assets/images/screenshot.png)
+![screenshot](./assets/images/screenshot.png)
