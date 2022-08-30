@@ -37,7 +37,7 @@ const Header = ({ projectsRef }) => {
 
     setMessage({
       sent: true,
-      text: "Sending...",
+      text: "Sending",
       loading: true,
     });
 
@@ -162,13 +162,20 @@ const Header = ({ projectsRef }) => {
                       />
                     </div>
                     {message.sent && message.loading && (
-                      <Fade>
-                        <div id="message-sent" className="mt-4">
-                          <p>{message.text}</p>
-                        </div>
-                      </Fade>
+                      <div>
+                        <Fade>
+                          <div id="message-sent" className="mt-4">
+                            <p>
+                              {message.text}{" "}
+                              <span
+                                className="spinner-border spinner-border-sm"
+                                role="status"
+                              ></span>
+                            </p>
+                          </div>
+                        </Fade>
+                      </div>
                     )}
-
                     {message.sent && !message.loading && (
                       <Fade>
                         <div id="message-sent" className="mt-4">
