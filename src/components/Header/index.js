@@ -174,9 +174,6 @@ const Header = ({ projectsRef }) => {
                             </p>
                           </div>
                         </Fade>
-                        <Fade>
-                          {}
-                        </Fade>
                       </div>
                     )}
                     {message.sent && !message.loading && (
