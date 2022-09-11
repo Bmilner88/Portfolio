@@ -3,7 +3,7 @@ import { Fade } from "react-awesome-reveal";
 
 export default function Portfolio() {
   return (
-    <div className="pt-5">
+    <>
       <div className="container-fluid">
         <h2>Portfolio</h2>
         <div className="row">
@@ -17,7 +17,7 @@ export default function Portfolio() {
                   rel="noreferrer"
                 >
                   <img
-                    src={require(`../../assets/images/portfolio/skyscape.png`)}
+                    src={require(`../assets/images/portfolio/skyscape.png`)}
                     className="img-fluid rounded"
                     alt="Skyscape website"
                   ></img>
@@ -35,7 +35,7 @@ export default function Portfolio() {
                   rel="noreferrer"
                 >
                   <img
-                    src={require(`../../assets/images/portfolio/regal.png`)}
+                    src={require(`../assets/images/portfolio/regal.png`)}
                     className="img-fluid rounded"
                     alt="Regal website"
                   ></img>
@@ -55,7 +55,7 @@ export default function Portfolio() {
                   rel="noreferrer"
                 >
                   <img
-                    src={require(`../../assets/images/portfolio/budgetek.png`)}
+                    src={require(`../assets/images/portfolio/budgetek.png`)}
                     className="img-fluid rounded"
                     alt="Budgetek website"
                   ></img>
@@ -73,7 +73,7 @@ export default function Portfolio() {
                   rel="noreferrer"
                 >
                   <img
-                    src={require(`../../assets/images/portfolio/showpro.png`)}
+                    src={require(`../assets/images/portfolio/showpro.png`)}
                     className="img-fluid rounded"
                     alt="ShowPro website"
                   ></img>
@@ -83,9 +83,14 @@ export default function Portfolio() {
           </div>
         </div>
       </div>
-      <a href="https://github.com/Bmilner88?tab=stars" target="_blank" rel="noreferrer" className="link link-dark text-decoration-none">
-        <h3 className="my-3">See More on GitHub</h3>
+      <a
+        href="https://github.com/Bmilner88?tab=stars"
+        target="_blank"
+        rel="noreferrer"
+        className="link link-dark text-decoration-none"
+      >
+        <button className="btn btn-dark my-3">See More on GitHub</button>
       </a>
-    </div>
+    </>
   );
 }

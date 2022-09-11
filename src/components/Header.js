@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Fade } from "react-awesome-reveal";
 import Modal from "react-bootstrap/Modal";
 
-import pdf from "../../assets/pdf/resume.pdf";
+import pdf from "../assets/pdf/resume.pdf";
 
 const Header = ({ projectsRef }) => {
   const scrollToElement = () => projectsRef.current.scrollIntoView();
@@ -89,7 +89,7 @@ const Header = ({ projectsRef }) => {
 
   return (
     <header>
-      <div className="container-lg mt-3 pb-5">
+      <div className="container-fluid my-3">
         <div className="row align-items-center">
           <h1 className="col-5 header-name">Ben Milner</h1>
           <div className="col-1"></div>
