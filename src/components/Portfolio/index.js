@@ -83,6 +83,9 @@ export default function Portfolio() {
           </div>
         </div>
       </div>
+      <a href="https://github.com/Bmilner88?tab=stars" target="_blank" rel="noreferrer" className="link link-dark text-decoration-none">
+        <h3 className="my-3">See More on GitHub</h3>
+      </a>
     </div>
   );
 }
