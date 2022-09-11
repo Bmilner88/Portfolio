@@ -6,7 +6,7 @@ export default function Hero() {
     <>
       <Fade>
         <div className="container">
-          <div className="row justify-content-center align-items-center gx-5">
+          <div className="row min-vh-100 justify-content-center align-items-center pb-5 g-5">
             <div className="col-sm">
               <img
                 className="img-fluid rounded"
@@ -14,8 +14,9 @@ export default function Hero() {
                 alt="Ben Milner"
               />
             </div>
+            <div className="col-sm-1"></div>
             <div className="col-sm">
-              <p className="about-text">
+              <p className="m-0 about-text">
                 Hi there! My name is Ben Milner, and I am seeking employment in
                 the field of Web Development. I am well qualified, having
                 completed a Full-Stack Web Development Boot Camp through the
