@@ -89,9 +89,9 @@ const Header = ({ projectsRef }) => {
 
   return (
     <header>
-      <div className="container-fluid my-3">
+      <div className="container-lg my-3 mb-5">
         <div className="row align-items-center">
-          <h1 className="m-0 col-5 header-name">Ben Milner</h1>
+          <h1 className="col-5 header-name">Ben Milner</h1>
           <div className="col-1"></div>
           <div className="col-6 align-items-center">
             <button

@@ -6,8 +6,8 @@ export default function Hero() {
     <>
       <Fade>
         <div className="container">
-          <div className="row min-vh-100 justify-content-center align-items-center pb-5 g-5">
-            <div className="col-sm">
+          <div className="row vh-100 justify-content-center align-items-center g-5 pb-5">
+            <div className="col-sm-5">
               <img
                 className="img-fluid rounded"
                 src={require("../assets/images/main/ben-milner.jpg")}
