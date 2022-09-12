@@ -3,10 +3,10 @@ import { Fade } from "react-awesome-reveal";
 
 export default function Hero() {
   return (
-    <>
+    <div className="my-5 pb-5">
       <Fade>
         <div className="container">
-          <div className="row vh-100 justify-content-center align-items-center g-5 pb-5">
+          <div style={{ minHeight: "75vh" }} className="row justify-content-center align-items-center g-5">
             <div className="col-sm-5">
               <img
                 className="img-fluid rounded"
@@ -35,6 +35,6 @@ export default function Hero() {
           </div>
         </div>
       </Fade>
-    </>
+    </div>
   );
 }

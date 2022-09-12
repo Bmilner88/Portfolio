@@ -89,7 +89,7 @@ const Header = ({ projectsRef }) => {
 
   return (
     <header>
-      <div className="container-lg my-3 mb-5">
+      <div className="container-lg my-3">
         <div className="row align-items-center">
           <h1 className="col-5 header-name">Ben Milner</h1>
           <div className="col-1"></div>
@@ -99,14 +99,12 @@ const Header = ({ projectsRef }) => {
               onClick={scrollToElement}
             >
               Projects
-            </button>{" "}
-            {"|"}{" "}
+            </button>
             <a href={pdf} target="_blank" rel="noreferrer">
               <button className="btn btn-header link-dark contact-btn">
                 Resume
               </button>
-            </a>{" "}
-            {"|"}{" "}
+            </a>
             <button
               className="btn btn-header link-dark contact-btn"
               onClick={handleShow}

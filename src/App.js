@@ -14,7 +14,9 @@ function App() {
     <div className="App">
       <Header projectsRef={projectsRef} />
       <Hero />
-      <Portfolio ref={projectsRef} />
+      <div className="pt-5" ref={projectsRef}>
+        <Portfolio />
+      </div>
       <Footer />
     </div>
   );
