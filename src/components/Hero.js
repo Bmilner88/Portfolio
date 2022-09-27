@@ -3,10 +3,10 @@ import React from "react";
 const Hero = () => {
   return (
     <section>
-      <div className="min-h-screen flex container items-center space-x-4">
+      <div className="min-h-screen flex flex-wrap xl:flex-nowrap lg:flex-nowrap container mx-auto items-center align-middle justify-center space-x-1 space-y-10 md:space-x-4 lg:space-x-4 xl:space-x-6 py-10">
         <div className="w-1/2">
           <img
-            className="max-w-md rounded-lg shadow-lg object-scale-down"
+            className="rounded-lg shadow-lg object-scale-down"
             src={require("../assets/images/main/ben-milner.jpg")}
             alt="Ben Milner"
           />

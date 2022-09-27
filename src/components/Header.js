@@ -6,7 +6,7 @@ const Header = ({ projectsRef }) => {
   const scrollToElement = () => projectsRef.current.scrollIntoView();
 
   return (
-    <header className="fixed w-full z-50">
+    <header className="fixed top-0 w-screen m-0 flex flex-col">
       <nav className="bg-gradient-to-r from-green-400 to-blue-400 shadow-lg">
         <div className="container mx-auto">
           <div className="sm:flex justify-around">
