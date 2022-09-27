@@ -9,7 +9,7 @@ function App() {
   const projectsRef = useRef(null);
 
   return (
-    <div className="bg-slate-700 h-100">
+    <div className="bg-slate-800">
       <Header projectsRef={projectsRef} />
       <Hero />
       <div ref={projectsRef}>

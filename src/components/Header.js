@@ -6,7 +6,7 @@ const Header = ({ projectsRef }) => {
   const scrollToElement = () => projectsRef.current.scrollIntoView();
 
   return (
-    <header>
+    <header className="fixed w-full z-50">
       <nav className="bg-gradient-to-r from-green-400 to-blue-400 shadow-lg">
         <div className="container mx-auto">
           <div className="sm:flex justify-around">
@@ -14,7 +14,7 @@ const Header = ({ projectsRef }) => {
             <ul className="text-white sm:self-center text-xl border-t sm:border-none">
               <li className="sm:inline-block">
                 <button
-                  className="p-3 hover:text-slate-700"
+                  className="p-3 transition duration-200 hover:text-slate-700"
                   onClick={scrollToElement}
                 >
                   Projects
@@ -22,11 +22,11 @@ const Header = ({ projectsRef }) => {
               </li>
               <li className="sm:inline-block">
                 <a href={pdf} target="_blank" rel="noreferrer">
-                  <button className="p-3 hover:text-slate-700">Resume</button>
+                  <button className="p-3 transition duration-200 hover:text-slate-700">Resume</button>
                 </a>
               </li>
               <li className="sm:inline-block">
-                <button className="p-3 hover:text-slate-700">Contact</button>
+                <button className="p-3 transition duration-200 hover:text-slate-700">Contact</button>
               </li>
             </ul>
           </div>
