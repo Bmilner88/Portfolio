@@ -9,7 +9,6 @@ module.exports = {
         "lc-river-1": "url('./assets/images/background/lc-river-1.jpg')",
         "lc-river-2": "url('./assets/images/background/lc-river-2.jpg')",
         "lc-river-3": "url('./assets/images/background/lc-river-3.jpg')",
-        "lc-river-4": "url('./assets/images/background/lc-river-4.jpg')"
       }
     },
   },
