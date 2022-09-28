@@ -3,15 +3,15 @@ import React from "react";
 const Hero = () => {
   return (
     <section>
-      <div className="min-h-screen flex flex-wrap xl:flex-nowrap lg:flex-nowrap container mx-auto items-center align-middle justify-center space-x-1 space-y-10 md:space-x-4 lg:space-x-4 xl:space-x-6 py-10">
-        <div className="w-1/2">
+      <div className="min-h-screen grid grid-cols-1 md:grid-cols-2 justify-items-center place-content-evenly items-center">
+        <div className="w-3/4">
           <img
             className="rounded-lg shadow-lg object-scale-down"
             src={require("../assets/images/main/ben-milner.jpg")}
             alt="Ben Milner"
           />
         </div>
-        <div className="w-1/2">
+        <div className="w-3/4 text-center">
           <p className="text-slate-300">
             Hi there! My name is Ben Milner, and I am seeking employment in the
             field of Web Development. I am well qualified, having completed a
