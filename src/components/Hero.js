@@ -3,16 +3,16 @@ import React from "react";
 const Hero = () => {
   return (
     <section>
-      <div className="min-h-screen grid grid-cols-1 md:grid-cols-2 justify-items-center place-content-evenly items-center">
-        <div className="w-3/4">
+      <div className="min-h-screen grid grid-cols-1 md:grid-cols-2 lg:mx-36 justify-items-center items-center">
+        <div className="w-9/12">
           <img
             className="rounded-lg shadow-lg object-scale-down"
             src={require("../assets/images/main/ben-milner.jpg")}
             alt="Ben Milner"
           />
         </div>
-        <div className="w-3/4 text-center">
-          <p className="text-slate-300">
+        <div className="w-3/4 text-justify">
+          <p className="text-slate-300 mt-7 md:mt-0">
             Hi there! My name is Ben Milner, and I am seeking employment in the
             field of Web Development. I am well qualified, having completed a
             Full-Stack Web Development Boot Camp through the University of Utah
