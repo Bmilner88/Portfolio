@@ -14,7 +14,7 @@ const Header = ({ projectsRef }) => {
             <ul className="text-white sm:self-center text-xl border-t sm:border-none">
               <li className="sm:inline-block">
                 <button
-                  className="p-3 transition duration-200 rounded-xl hover:text-slate-700 hover:bg-[#BFbada55]"
+                  className="p-3 transition duration-500 rounded-xl hover:text-slate-700 hover:bg-[#BFbada55]"
                   onClick={scrollToElement}
                 >
                   Projects
@@ -22,11 +22,11 @@ const Header = ({ projectsRef }) => {
               </li>
               <li className="sm:inline-block">
                 <a href={pdf} target="_blank" rel="noreferrer">
-                  <button className="p-3 transition duration-200 rounded-xl hover:text-slate-700 hover:bg-[#BFbada55]">Resume</button>
+                  <button className="p-3 transition duration-500 rounded-xl hover:text-slate-700 hover:bg-[#BFbada55]">Resume</button>
                 </a>
               </li>
               <li className="sm:inline-block">
-                <button className="p-3 transition duration-200 rounded-xl hover:text-slate-700 hover:bg-[#BFbada55]">Contact</button>
+                <button className="p-3 transition duration-500 rounded-xl hover:text-slate-700 hover:bg-[#BFbada55]">Contact</button>
               </li>
             </ul>
           </div>
