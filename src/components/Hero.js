@@ -4,9 +4,9 @@ const Hero = () => {
   return (
     <section>
       <div className="min-h-screen grid grid-cols-1 md:grid-cols-2 lg:mx-36 justify-items-center items-center">
-        <div className="w-9/12">
+        <div className="w-3/4 sm:w-1/2 md:w-9/12">
           <img
-            className="rounded-lg shadow-lg object-scale-down"
+            className="rounded-lg shadow-lg self-center"
             src={require("../assets/images/main/ben-milner.jpg")}
             alt="Ben Milner"
           />
