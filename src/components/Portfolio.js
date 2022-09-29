@@ -11,7 +11,7 @@ const Portfolio = () => {
           href="https://bm-skyscape.onrender.com/"
           target="_blank"
           rel="noreferrer"
-          className="bg-slate-200 rounded-lg w-9/12 shadow-lg"
+          className="bg-slate-200 rounded-lg w-9/12 shadow-lg transition duration-200 hover:scale-110"
         >
           <h3 className="text-center text-2xl font-bold my-2">Skyscape</h3>
           <img
@@ -24,7 +24,7 @@ const Portfolio = () => {
           href="https://regal-help.herokuapp.com/"
           target="_blank"
           rel="noreferrer"
-          className="bg-slate-200 rounded-lg w-9/12 shadow-lg"
+          className="bg-slate-200 rounded-lg w-9/12 shadow-lg transition duration-200 hover:scale-110"
         >
           <h3 className="text-center text-2xl font-bold my-2">Regal</h3>
 
@@ -39,7 +39,7 @@ const Portfolio = () => {
           href="https://quiet-tundra-30236.herokuapp.com/"
           target="_blank"
           rel="noreferrer"
-          className="bg-slate-200 rounded-lg w-9/12 shadow-lg"
+          className="bg-slate-200 rounded-lg w-9/12 shadow-lg transition duration-200 hover:scale-110"
         >
           <h3 className="text-center text-2xl font-bold my-2">Budgetek</h3>
           <img
@@ -52,7 +52,7 @@ const Portfolio = () => {
           href="https://BlinkingHeimdall.github.io/show-pro/"
           target="_blank"
           rel="noreferrer"
-          className="bg-slate-200 rounded-lg w-9/12 shadow-lg"
+          className="bg-slate-200 rounded-lg w-9/12 shadow-lg transition duration-200 hover:scale-110"
         >
           <h3 className="text-center text-2xl font-bold my-2">ShowPro</h3>
           <img
