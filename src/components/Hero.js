@@ -2,7 +2,7 @@ import React from "react";
 
 const Hero = () => {
   return (
-    <section>
+    <section className="pt-28 sm:pt-0">
       <div className="min-h-screen grid grid-cols-1 md:grid-cols-2 lg:mx-36 justify-items-center items-center">
         <div className="w-3/4 sm:w-1/2 md:w-9/12">
           <img
