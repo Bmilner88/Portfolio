@@ -145,7 +145,7 @@ const Header = ({ projectsRef }) => {
                       <div className="form-group">
                         <label for="name">Name</label>
                         <input
-                          className="px-3 py-3 placeholder-slate-300 text-slate-600 relative bg-white bg-white rounded text-sm border-0 shadow outline-none focus:outline-none focus:ring w-full"
+                          className="px-3 py-3 placeholder-slate-300 text-slate-600 relative bg-white rounded text-sm border-0 shadow outline-none focus:outline-none focus:ring w-full"
                           placeholder="John Doe"
                           name="name"
                           type="text"
@@ -158,7 +158,7 @@ const Header = ({ projectsRef }) => {
                           Email
                         </label>
                         <input
-                          className="px-3 py-3 placeholder-slate-300 text-slate-600 relative bg-white bg-white rounded text-sm border-0 shadow outline-none focus:outline-none focus:ring w-full"
+                          className="px-3 py-3 placeholder-slate-300 text-slate-600 relative bg-white rounded text-sm border-0 shadow outline-none focus:outline-none focus:ring w-full"
                           placeholder="name@example.com"
                           name="email"
                           type="email"
@@ -171,7 +171,7 @@ const Header = ({ projectsRef }) => {
                           Message
                         </label>
                         <textarea
-                          className="px-3 py-3 placeholder-slate-300 text-slate-600 relative bg-white bg-white rounded text-sm border-0 shadow outline-none focus:outline-none focus:ring w-full"
+                          className="px-3 py-3 placeholder-slate-300 text-slate-600 relative bg-white rounded text-sm border-0 shadow outline-none focus:outline-none focus:ring w-full"
                           placeholder="Message..."
                           name="message"
                           type="text"
