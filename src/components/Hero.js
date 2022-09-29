@@ -12,7 +12,7 @@ const Hero = () => {
           />
         </div>
         <div className="w-3/4 text-justify">
-          <p className="text-slate-300 mt-7 md:mt-0">
+          <p className="text-slate-300 mt-7 sm:mt-0">
             Hi there! My name is Ben Milner, and I am seeking employment in the
             field of Web Development. I am well qualified, having completed a
             Full-Stack Web Development Boot Camp through the University of Utah
