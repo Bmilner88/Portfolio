@@ -3,9 +3,7 @@ import { BiMenu } from "react-icons/bi";
 
 import pdf from "../assets/pdf/resume.pdf";
 
-const Header = ({ projectsRef }) => {
-  const scrollToElement = () => projectsRef.current.scrollIntoView();
-
+const Header = () => {
   const [showModal, setShowModal] = useState(false);
 
   const [formState, setFormState] = useState({
@@ -106,12 +104,11 @@ const Header = ({ projectsRef }) => {
       >
         <ul className="list-reset sm:flex justify-end flex-1 items-center">
           <li className="mr-3">
-            <button
-              className="text-white font-semibold p-2 transition duration-500 rounded-xl hover:text-slate-700 hover:bg-[#BFbada55]"
-              onClick={scrollToElement}
-            >
-              Projects
-            </button>
+            <a href="https://github.com/Bmilner88?tab=stars" target="_blank" rel="noreferrer">
+              <button className="text-white font-semibold p-2 transition duration-500 rounded-xl hover:text-slate-700 hover:bg-[#BFbada55]">
+                Projects
+              </button>
+            </a>
           </li>
           <li className="mr-3">
             <a href={pdf} target="_blank" rel="noreferrer">
