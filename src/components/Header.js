@@ -3,9 +3,7 @@ import { BiMenu } from "react-icons/bi";
 
 import pdf from "../assets/pdf/resume.pdf";
 
-const Header = ({ projectsRef }) => {
-  const scrollToElement = () => projectsRef.current.scrollIntoView();
-
+const Header = () => {
   const [showModal, setShowModal] = useState(false);
 
   const [formState, setFormState] = useState({
@@ -26,7 +24,7 @@ const Header = ({ projectsRef }) => {
     if (!formState.name || !formState.email || !formState.message) {
       setMessage({
         sent: true,
-        text: "Please fill in all fields!",
+        text: "Please fill in all the fields!",
       });
       return;
     }
@@ -106,12 +104,11 @@ const Header = ({ projectsRef }) => {
       >
         <ul className="list-reset sm:flex justify-end flex-1 items-center">
           <li className="mr-3">
-            <button
-              className="text-white font-semibold p-2 transition duration-500 rounded-xl hover:text-slate-700 hover:bg-[#BFbada55]"
-              onClick={scrollToElement}
-            >
-              Projects
-            </button>
+            <a href="https://github.com/Bmilner88?tab=stars" target="_blank" rel="noreferrer">
+              <button className="text-white font-semibold p-2 transition duration-500 rounded-xl hover:text-slate-700 hover:bg-[#BFbada55]">
+                Projects
+              </button>
+            </a>
           </li>
           <li className="mr-3">
             <a href={pdf} target="_blank" rel="noreferrer">
@@ -134,7 +131,7 @@ const Header = ({ projectsRef }) => {
       {showModal ? (
         <>
           <div className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none">
-            <div className="relative w-[550px] my-6 mx-auto max-w-3xl">
+            <div className="relative sm:w-[550px] my-6 mx-auto max-w-3xl">
               <div className="border-0 rounded-lg shadow-lg relative flex flex-col w-full bg-white outline-none focus:outline-none">
                 <div className="flex items-start justify-between p-5 border-b border-solid border-slate-200 rounded-t">
                   <h3 className="text-3xl font-semibold">Send Me An Email</h3>
@@ -203,14 +200,14 @@ const Header = ({ projectsRef }) => {
                 </div>
                 <div className="flex items-center justify-end p-6 border-t border-solid border-slate-200 rounded-b">
                   <button
-                    className="text-slate-700 background-transparent font-bold uppercase px-6 py-2 text-sm outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
+                    className="text-slate-700 background-transparent font-bold uppercase px-6 py-2 text-sm outline-none focus:outline-none mr-1 mb-1 transition duration-500 rounded hover:text-slate-700 hover:bg-[#BFbada55]"
                     type="button"
                     onClick={() => setShowModal(false)}
                   >
                     Close
                   </button>
                   <button
-                    className="bg-gradient-to-r from-green-400 to-blue-400 text-white active:bg-emerald-600 font-bold uppercase text-sm px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
+                    className="bg-gradient-to-r from-green-400 to-blue-400 text-white active:bg-emerald-600 font-bold uppercase text-sm px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 transition duration-200 hover:scale-110"
                     type="button"
                     onClick={handleSubmit}
                   >
