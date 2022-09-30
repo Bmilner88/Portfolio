@@ -5,16 +5,14 @@ import Hero from "./components/Hero";
 import Footer from "./components/Footer";
 import Portfolio from "./components/Portfolio";
 
-import "./App.css";
-
 function App() {
   const projectsRef = useRef(null);
 
   return (
-    <div className="App">
+    <div className="bg-slate-800">
       <Header projectsRef={projectsRef} />
       <Hero />
-      <div className="pt-5" ref={projectsRef}>
+      <div ref={projectsRef}>
         <Portfolio />
       </div>
       <Footer />

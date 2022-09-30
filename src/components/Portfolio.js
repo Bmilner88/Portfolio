@@ -1,96 +1,69 @@
 import React from "react";
-import { Fade } from "react-awesome-reveal";
 
-export default function Portfolio() {
+const Portfolio = () => {
   return (
     <>
-      <div className="container-fluid">
-        <h2>Portfolio</h2>
-        <div className="row">
-          <div className="col-sm pb-3">
-            <Fade direction="left">
-              <div className="project-caption m-3">
-                <h3 className="text-center">Skyscape</h3>
-                <a
-                  href="https://bm-skyscape.onrender.com/"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <img
-                    src={require(`../assets/images/portfolio/skyscape.png`)}
-                    className="img-fluid rounded"
-                    alt="Skyscape website"
-                  ></img>
-                </a>
-              </div>
-            </Fade>
-          </div>
-          <div className="col-sm">
-            <Fade direction="right">
-              <div className="project-caption m-3">
-                <h3 className="text-center">Regal</h3>
-                <a
-                  href="https://regal-help.herokuapp.com/"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <img
-                    src={require(`../assets/images/portfolio/regal.png`)}
-                    className="img-fluid rounded"
-                    alt="Regal website"
-                  ></img>
-                </a>
-              </div>
-            </Fade>
-          </div>
-        </div>
-        <div className="row">
-          <div className="col-sm">
-            <Fade direction="left">
-              <div className="project-caption m-3">
-                <h3 className="text-center">Budgetek</h3>
-                <a
-                  href="https://quiet-tundra-30236.herokuapp.com/"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <img
-                    src={require(`../assets/images/portfolio/budgetek.png`)}
-                    className="img-fluid rounded"
-                    alt="Budgetek website"
-                  ></img>
-                </a>
-              </div>
-            </Fade>
-          </div>
-          <div className="col-sm">
-            <Fade direction="right">
-              <div className="project-caption m-3">
-                <h3 className="text-center">ShowPro</h3>
-                <a
-                  href="https://BlinkingHeimdall.github.io/show-pro/"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <img
-                    src={require(`../assets/images/portfolio/showpro.png`)}
-                    className="img-fluid rounded"
-                    alt="ShowPro website"
-                  ></img>
-                </a>
-              </div>
-            </Fade>
-          </div>
-        </div>
-      </div>
-      <a
-        href="https://github.com/Bmilner88?tab=stars"
-        target="_blank"
-        rel="noreferrer"
-        className="link link-dark text-decoration-none"
-      >
-        <button className="btn btn-dark my-3">See More on GitHub</button>
-      </a>
+      <h2 className="text-center text-slate-300 font-bold text-3xl my-7">
+        Portfolio
+      </h2>
+      <section className="h-auto grid grid-cols-1 md:grid-cols-2 justify-items-center mb-7 gap-10">
+        <a
+          href="https://bm-skyscape.onrender.com/"
+          target="_blank"
+          rel="noreferrer"
+          className="bg-gradient-to-r from-green-400 to-blue-400 text-white rounded-lg w-9/12 shadow-lg transition duration-200 hover:scale-110"
+        >
+          <h3 className="text-center text-2xl font-bold my-2">Skyscape</h3>
+          <img
+            src={require(`../assets/images/portfolio/skyscape.png`)}
+            className="rounded-b-lg"
+            alt="Skyscape website"
+          ></img>
+        </a>
+        <a
+          href="https://regal-help.herokuapp.com/"
+          target="_blank"
+          rel="noreferrer"
+          className="bg-gradient-to-r from-green-400 to-blue-400 text-white rounded-lg w-9/12 shadow-lg transition duration-200 hover:scale-110"
+        >
+          <h3 className="text-center text-2xl font-bold my-2">Regal</h3>
+
+          <img
+            src={require(`../assets/images/portfolio/regal.png`)}
+            className="rounded-b-lg"
+            alt="Regal website"
+          ></img>
+        </a>
+
+        <a
+          href="https://quiet-tundra-30236.herokuapp.com/"
+          target="_blank"
+          rel="noreferrer"
+          className="bg-gradient-to-r from-green-400 to-blue-400 text-white rounded-lg w-9/12 shadow-lg transition duration-200 hover:scale-110"
+        >
+          <h3 className="text-center text-2xl font-bold my-2">Budgetek</h3>
+          <img
+            src={require(`../assets/images/portfolio/budgetek.png`)}
+            className="rounded-b-lg"
+            alt="Budgetek website"
+          ></img>
+        </a>
+        <a
+          href="https://BlinkingHeimdall.github.io/show-pro/"
+          target="_blank"
+          rel="noreferrer"
+          className="bg-gradient-to-r from-green-400 to-blue-400 text-white rounded-lg w-9/12 shadow-lg transition duration-200 hover:scale-110"
+        >
+          <h3 className="text-center text-2xl font-bold my-2">ShowPro</h3>
+          <img
+            src={require(`../assets/images/portfolio/showpro.png`)}
+            className="rounded-b-lg"
+            alt="ShowPro website"
+          ></img>
+        </a>
+      </section>
     </>
   );
-}
+};
+
+export default Portfolio;
