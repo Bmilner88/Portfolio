@@ -8,7 +8,7 @@ const Footer = () => {
         href="https://www.linkedin.com/in/bmilner88"
         target="_blank"
         rel="noreferrer"
-        className="text-white transition duration-100 hover:text-green-300"
+        className="text-white transition duration-500 hover:text-green-300"
       >
         <span>
           <BsLinkedin size={25} />
@@ -18,7 +18,7 @@ const Footer = () => {
         href="https://github.com/Bmilner88"
         target="_blank"
         rel="noreferrer"
-        className="text-white transition duration-100 hover:text-green-300"
+        className="text-white transition duration-500 hover:text-green-300"
       >
         <span>
           <BsGithub size={25} />
@@ -28,7 +28,7 @@ const Footer = () => {
         href="https://stackoverflow.com/users/19388818/ben-milner"
         target="_blank"
         rel="noreferrer"
-        className="text-white transition duration-100 hover:text-green-300"
+        className="text-white transition duration-500 hover:text-green-300"
       >
         <span>
           <BsStackOverflow size={25} />
