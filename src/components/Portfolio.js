@@ -3,7 +3,7 @@ import React from "react";
 const Portfolio = () => {
   return (
     <>
-      <h2 className="text-center text-slate-300 font-bold text-5xl my-7">
+      <h2 className="text-center text-slate-300 font-bold text-5xl my-12">
         Portfolio
       </h2>
       <section className="h-auto grid grid-cols-1 md:grid-cols-2 justify-items-center mb-7 gap-5">
