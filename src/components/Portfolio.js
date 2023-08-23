@@ -8,6 +8,19 @@ const Portfolio = () => {
       </h2>
       <section className="h-auto grid grid-cols-1 md:grid-cols-2 justify-items-center mb-7 gap-5">
         <a
+          href="https://www.pickupapiece.com/"
+          target="_blank"
+          rel="noreferrer"
+          className="bg-slate-400 text-white rounded-lg w-11/12 lg:w-9/12 shadow-lg transition duration-200 hover:scale-105"
+        >
+          <h3 className="text-center text-2xl font-bold my-2">Pick Up A Piece</h3>
+          <img
+            src={require(`../assets/images/portfolio/puap.png`)}
+            className="rounded-b-lg"
+            alt="Budgetek website"
+          ></img>
+        </a>
+        <a
           href="https://bm-skyscape.onrender.com/"
           target="_blank"
           rel="noreferrer"
@@ -32,20 +45,6 @@ const Portfolio = () => {
             src={require(`../assets/images/portfolio/regal.png`)}
             className="rounded-b-lg"
             alt="Regal website"
-          ></img>
-        </a>
-
-        <a
-          href="https://quiet-tundra-30236.herokuapp.com/"
-          target="_blank"
-          rel="noreferrer"
-          className="bg-slate-400 text-white rounded-lg w-11/12 lg:w-9/12 shadow-lg transition duration-200 hover:scale-105"
-        >
-          <h3 className="text-center text-2xl font-bold my-2">Budgetek</h3>
-          <img
-            src={require(`../assets/images/portfolio/budgetek.png`)}
-            className="rounded-b-lg"
-            alt="Budgetek website"
           ></img>
         </a>
         <a
