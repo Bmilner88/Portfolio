@@ -92,7 +92,7 @@ const Header = () => {
           onClick={() => {
             document.getElementById("nav-content").classList.toggle("hidden");
           }}
-          className="flex items-center px-3 py-2 rounded text-white transition duration-500  hover:text-slate-700 hover:bg-[#BFbada55]"
+          className="flex items-center px-3 py-2 rounded text-white transition duration-500 hover:text-slate-700 hover:bg-[#BFbada55]"
         >
           <BiMenu size={25} />
         </button>
