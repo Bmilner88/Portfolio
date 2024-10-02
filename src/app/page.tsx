@@ -2,100 +2,119 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="https://nextjs.org/icons/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="https://nextjs.org/icons/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+    <div className="bg-slate-800">
+      <section className="pt-28 sm:pt-0 -mt-[88px] animate-appear">
+      <div className="min-h-screen grid grid-cols-1 md:grid-cols-2 lg:mx-60 justify-items-center items-center mt-[88px]">
+        <div className="w-3/4 sm:w-1/2 md:w-9/12">
+          <Image
+            className="rounded-lg shadow-lg self-center transition-all duration-1000 opacity-0 opacity-100"
+            src={"/images/main/ben-milner.jpg"}
+            width={500}
+            height={500}
+            alt="Ben Milner"
+          />
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
+        <div className="w-11/12 text-justify">
+          <p className="text-slate-300 mt-7 sm:mt-0">
+            Hi there! My name is Ben Milner, and I am seeking employment in the
+            field of Web Development. I am well qualified, having completed a
+            Full-Stack Web Development Boot Camp through the University of Utah
+            in addition to my professional and personal experience. I am a fast
+            learner, a reliable employee, and I work well with others both as
+            part of a team and in assisting clients and fellow employees.
+            <br />
+            <br />I have about 5 years of professional experience in IT and have
+            always been fascinated with technology. In my spare time I enjoy
+            skiing, hiking and playing lots of games. I love traveling to new 
+            places and learning new things.
+          </p>
+        </div>
+      </div>
+    </section>
+    <h2 className="text-center text-slate-300 font-bold text-5xl my-12">
+        Portfolio
+      </h2>
+      <section className="h-auto grid grid-cols-1 md:grid-cols-2 justify-items-center mb-7 gap-5">
         <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
+          href="https://www.pickupapiece.com/"
           target="_blank"
-          rel="noopener noreferrer"
+          rel="noreferrer"
+          className="bg-slate-400 text-white rounded-lg w-11/12 lg:w-9/12 shadow-lg transition duration-200 hover:scale-105"
         >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
+          <h3 className="text-center text-2xl font-bold my-2">Pick Up A Piece</h3>
+          <Image 
+            src={"/images/portfolio/puap.png"}
+            width={1000}
+            height={500}
+            alt="Pick Up a Piece landing page"
           />
-          Learn
         </a>
         <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
+          href="https://bm-skyscape.onrender.com/"
           target="_blank"
-          rel="noopener noreferrer"
+          rel="noreferrer"
+          className="bg-slate-400 text-white rounded-lg w-11/12 lg:w-9/12 shadow-lg transition duration-200 hover:scale-105"
         >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
+          <h3 className="text-center text-2xl font-bold my-2">Skyscape</h3>
+          <Image 
+            src={"/images/portfolio/skyscape.png"}
+            width={1000}
+            height={500}
+            alt="Skyscape landing page"
           />
-          Examples
         </a>
         <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
+          href="https://regal-help.herokuapp.com/"
           target="_blank"
-          rel="noopener noreferrer"
+          rel="noreferrer"
+          className="bg-slate-400 text-white rounded-lg w-11/12 lg:w-9/12 shadow-lg transition duration-200 hover:scale-105"
         >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
+          <h3 className="text-center text-2xl font-bold my-2">Regal</h3>
+          <Image 
+            src={"/images/portfolio/regal.png"}
+            width={1000}
+            height={500}
+            alt="Regal landing page"
           />
-          Go to nextjs.org →
         </a>
-      </footer>
+        <a
+          href="https://BlinkingHeimdall.github.io/show-pro/"
+          target="_blank"
+          rel="noreferrer"
+          className="bg-slate-400 text-white rounded-lg w-11/12 lg:w-9/12 shadow-lg transition duration-200 hover:scale-105"
+        >
+          <h3 className="text-center text-2xl font-bold my-2">ShowPro</h3>
+          <Image 
+            src={"/images/portfolio/showpro.png"}
+            width={1000}
+            height={500}
+            alt="ShowPro landing page"
+          />
+        </a>
+      </section>
+      <div className="flex place-content-center gap-x-10 py-3">
+      <a
+        href="https://www.linkedin.com/in/bmilner88"
+        target="_blank"
+        rel="noreferrer"
+        className="text-white transition duration-500 hover:text-green-300"
+      >
+      </a>
+      <a
+        href="https://github.com/Bmilner88"
+        target="_blank"
+        rel="noreferrer"
+        className="text-white transition duration-500 hover:text-green-300"
+      >
+      </a>
+      <a
+        href="https://stackoverflow.com/users/19388818/ben-milner"
+        target="_blank"
+        rel="noreferrer"
+        className="text-white transition duration-500 hover:text-green-300"
+      >
+      </a>
+    </div>
     </div>
   );
 }
