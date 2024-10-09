@@ -14,6 +14,14 @@ export default function Contact() {
     loading: false,
   });
 
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormState({
+      ...formState,
+      [name]: value
+    });
+  };
+
   // const handleSubmit = async (e) => {
   //   e.preventDefault();
 
@@ -63,23 +71,11 @@ export default function Contact() {
   //     });
   // };
 
-  // const handleChange = (e) => {
-  //   const { name, value } = e.target;
 
-  //   setMessage({
-  //     sent: false,
-  //     text: "",
-  //   });
-
-  //   setFormState({
-  //     ...formState,
-  //     [name]: value,
-  //   });
-  // };
 
   return (
-    <div className="grid grid-cols-2 gap-20">
-      <div className="flex justify-end my-auto">
+    <div className="grid sm:grid-cols-2 sm:gap-20">
+      <div className="flex justify-center sm:justify-end my-auto">
         <p>
           Like what you see? Want to see more? Send me a message!
           <br />
@@ -87,43 +83,45 @@ export default function Contact() {
           Be sure to include your name and email and we will be in touch!
         </p>
       </div>
-      <div>
+      <div className="flex-col">
         <h3 className="text-3xl font-semibold">Send Me An Email</h3>
         <form className="w-full max-w-lg bg-slate-100 rounded px-8 pt-6 pb-8 mb-4">
           <div className="flex flex-wrap -mx-3 mb-6">
             <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
               <label
                 className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
-                htmlFor="grid-first-name"
+                htmlFor="grid-name"
               >
                 Name
               </label>
               <input
-                className="appearance-none block w-full bg-gray-200 text-gray-700 border border-red-500 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white transition-all duration-300"
+                className="appearance-none block w-full bg-gray-200 text-gray-700 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white transition-all duration-300"
                 id="grid-name"
+                name="name"
                 type="text"
                 placeholder="John Doe"
-                // value={formState.name}
-                // onChange={handleChange}
+                //value={formState.name}
+                onChange={handleChange}
               />
-              <p className="text-red-500 text-xs italic">
+              <p className="hidden text-red-500 text-xs italic">
                 Please fill out this field.
               </p>
             </div>
             <div className="w-full md:w-1/2 px-3">
               <label
                 className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
-                htmlFor="grid-last-name"
+                htmlFor="grid-email"
               >
                 Email
               </label>
               <input
                 className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500 transition-all duration-300"
                 id="grid-email"
+                name="email"
                 type="email"
                 placeholder="name@example.com"
-                // value={formState.name}
-                // onChange={handleChange}
+                // value={formState.email}
+                onChange={handleChange}
               />
             </div>
           </div>
@@ -138,10 +136,11 @@ export default function Contact() {
               <textarea
                 className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500 transition-all duration-300"
                 id="grid-message"
+                name="message"
                 rows={8}
                 placeholder="Message..."
-                // value={formState.email}
-                // onChange={handleChange}
+                // value={formState.message}
+                onChange={handleChange}
               />
               {/* {message.sent && message.loading && (
                         <div>
