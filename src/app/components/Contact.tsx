@@ -2,17 +2,17 @@
 import { useState, useEffect } from "react";
 
 export default function Contact() {
-  // const [formState, setFormState] = useState({
-  //   name: "",
-  //   email: "",
-  //   message: "",
-  // });
+  const [formState, setFormState] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
 
-  // const [message, setMessage] = useState({
-  //   sent: false,
-  //   text: "",
-  //   loading: false,
-  // });
+  const [message, setMessage] = useState({
+    sent: false,
+    text: "",
+    loading: false,
+  });
 
   // const handleSubmit = async (e) => {
   //   e.preventDefault();
@@ -78,44 +78,72 @@ export default function Contact() {
   // };
 
   return (
-    <>
-      <h3 className="text-3xl font-semibold">Send Me An Email</h3>
-      <form className="w-full max-w-lg">
-        <div className="form-group">
-          <label>Name</label>
-          <input
-            className="px-3 py-3 placeholder-slate-300 text-slate-600 relative bg-white rounded text-sm border-0 shadow outline-none focus:outline-none focus:ring w-full"
-            placeholder="John Doe"
-            name="name"
-            type="text"
-            // value={formState.name}
-            // onChange={handleChange}
-          />
-        </div>
-        <div className="form-group">
-          <label className="mt-3">Email</label>
-          <input
-            className="px-3 py-3 placeholder-slate-300 text-slate-600 relative bg-white rounded text-sm border-0 shadow outline-none focus:outline-none focus:ring w-full"
-            placeholder="name@example.com"
-            name="email"
-            type="email"
-            // value={formState.email}
-            // onChange={handleChange}
-          />
-        </div>
-        <div className="form-group">
-          <label className="mt-3">Message</label>
-          <textarea
-            className="px-3 py-3 placeholder-slate-300 text-slate-600 relative bg-white rounded text-sm border-0 shadow outline-none focus:outline-none focus:ring w-full"
-            placeholder="Message..."
-            name="message"
-            // type="text"
-            rows={8}
-            // value={formState.message}
-            // onChange={handleChange}
-          />
-        </div>
-        {/* {message.sent && message.loading && (
+    <div className="grid grid-cols-2 gap-20">
+      <div className="flex justify-end my-auto">
+        <p>
+          Like what you see? Want to see more? Send me a message!
+          <br />
+          <br />
+          Be sure to include your name and email and we will be in touch!
+        </p>
+      </div>
+      <div>
+        <h3 className="text-3xl font-semibold">Send Me An Email</h3>
+        <form className="w-full max-w-lg bg-slate-100 rounded px-8 pt-6 pb-8 mb-4">
+          <div className="flex flex-wrap -mx-3 mb-6">
+            <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+              <label
+                className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+                htmlFor="grid-first-name"
+              >
+                Name
+              </label>
+              <input
+                className="appearance-none block w-full bg-gray-200 text-gray-700 border border-red-500 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white transition-all duration-300"
+                id="grid-name"
+                type="text"
+                placeholder="John Doe"
+                // value={formState.name}
+                // onChange={handleChange}
+              />
+              <p className="text-red-500 text-xs italic">
+                Please fill out this field.
+              </p>
+            </div>
+            <div className="w-full md:w-1/2 px-3">
+              <label
+                className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+                htmlFor="grid-last-name"
+              >
+                Email
+              </label>
+              <input
+                className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500 transition-all duration-300"
+                id="grid-email"
+                type="email"
+                placeholder="name@example.com"
+                // value={formState.name}
+                // onChange={handleChange}
+              />
+            </div>
+          </div>
+          <div className="flex flex-wrap -mx-3 mb-6">
+            <div className="w-full px-3">
+              <label
+                className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+                htmlFor="grid-message"
+              >
+                Message
+              </label>
+              <textarea
+                className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500 transition-all duration-300"
+                id="grid-message"
+                rows={8}
+                placeholder="Message..."
+                // value={formState.email}
+                // onChange={handleChange}
+              />
+              {/* {message.sent && message.loading && (
                         <div>
                           <div id="message-sent" className="mt-4">
                             <p>
@@ -133,14 +161,19 @@ export default function Contact() {
                           <p>{message.text}</p>
                         </div>
                       )} */}
-        <button
-          className="bg-gradient-to-r from-green-400 to-blue-400 text-white active:bg-emerald-600 font-bold uppercase text-sm px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 transition duration-200 hover:scale-110"
-          type="button"
-          //onClick={handleSubmit}
-        >
-          Send
-        </button>
-      </form>
-    </>
+            </div>
+          </div>
+          <div className="flex justify-center">
+            <button
+              className="bg-gradient-to-r from-green-400 to-blue-400 text-white font-bold uppercase text-sm px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 transition duration-200 hover:scale-110"
+              type="button"
+              //onClick={handleSubmit}
+            >
+              Send
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
   );
 }
