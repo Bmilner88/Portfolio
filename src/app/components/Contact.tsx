@@ -1,5 +1,5 @@
 "use client";
-import { useState } from "react";
+import { useState } from "react"
 
 export default function Contact() {
   const [formState, setFormState] = useState({
@@ -14,14 +14,14 @@ export default function Contact() {
     loading: false,
   });
 
-  const handleChange = (e: { target: { name: any; value: any; }; }) => {
+  const handleChange = (e: { target: { name: any; value: any } }) => {
     setFormState({
       ...formState,
       [e.target.name]: e.target.value,
     });
   };
 
-  const handleSubmit = async (e: { preventDefault: () => void; }) => {
+  const handleSubmit = async (e: { preventDefault: () => void }) => {
     e.preventDefault();
     if (!formState.name || !formState.email || !formState.message) {
       setMessage({
