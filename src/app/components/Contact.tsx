@@ -165,7 +165,7 @@ export default function Contact() {
           </div>
           <div className="flex justify-center">
             <button
-              className="bg-gradient-to-r from-green-400 to-blue-400 text-white font-bold uppercase text-sm px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 transition duration-200 hover:scale-110"
+              className="bg-gradient-to-r from-teal-400 to-blue-400 text-white font-bold uppercase text-sm px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 transition duration-200 hover:scale-110"
               type="button"
               //onClick={handleSubmit}
             >
