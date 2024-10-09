@@ -70,7 +70,10 @@ export default function Contact() {
   };
 
   return (
-    <section id="contact" className="scroll-mt-36">
+    <div id="contact" className="h-screen scroll-mt-28">
+      <h2 className="text-center text-slate-300 font-bold text-5xl mt-20">
+        Contact
+      </h2>
       <div className="grid sm:grid-cols-2 sm:gap-20">
         <div className="flex justify-center sm:justify-end my-auto">
           <p>
@@ -191,6 +194,6 @@ export default function Contact() {
           </form>
         </div>
       </div>
-    </section>
+    </div>
   );
 }

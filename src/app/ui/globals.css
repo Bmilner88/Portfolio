@@ -27,5 +27,5 @@ body {
 }
 
 .section {
-  @apply h-[calc(100vh-8rem)]
+  @apply h-[calc(100vh-8rem)];
 }

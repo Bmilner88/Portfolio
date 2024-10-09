@@ -2,42 +2,47 @@ import Image from "next/image";
 
 export default function Portfolio() {
   return (
-    <section id="portfolio" className="h-auto grid grid-cols-1 md:grid-cols-2 justify-items-center mb-7 gap-5 scroll-mt-36">
-      <div className="relative text-center">
+    <div id="portfolio" className="h-screen scroll-mt-28">
+      <h2 className="text-center text-slate-300 font-bold text-5xl mt-20">
+        Portfolio
+      </h2>
+      <div className="h-auto grid grid-cols-1 md:grid-cols-2 justify-items-center mb-7 gap-5">
+        <div className="relative text-center">
+          <a
+            href="https://www.pickupapiece.com/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <Image
+              src={"/images/portfolio/puap.png"}
+              width={1000}
+              height={500}
+              alt="Pick Up a Piece landing page"
+              className="rounded-lg w-11/12 lg:w-9/12 shadow-lg transition duration-200 hover:scale-105"
+            />
+            <div className="w-full absolute top-0 left-0 text-center mt-10">
+              <h2 className="text-4xl font-bold text-red-500 text-center">
+                Pick Up A Piece
+              </h2>
+            </div>
+          </a>
+        </div>
+
         <a
-          href="https://www.pickupapiece.com/"
+          className="bg-slate-400 text-white rounded-lg w-11/12 lg:w-9/12 shadow-lg transition duration-200 hover:scale-105"
+          href="https://regal-help.herokuapp.com/"
           target="_blank"
           rel="noreferrer"
         >
           <Image
-            src={"/images/portfolio/puap.png"}
+            src={"/images/portfolio/regal.png"}
             width={1000}
             height={500}
-            alt="Pick Up a Piece landing page"
-            className="rounded-lg w-11/12 lg:w-9/12 shadow-lg transition duration-200 hover:scale-105"
+            alt="Regal landing page"
           />
-          <div className="w-full absolute top-0 left-0 text-center mt-10">
-            <h2 className="text-4xl font-bold text-red-500 text-center">
-              Pick Up A Piece
-            </h2>
-          </div>
         </a>
       </div>
-
-      <a
-        className="bg-slate-400 text-white rounded-lg w-11/12 lg:w-9/12 shadow-lg transition duration-200 hover:scale-105"
-        href="https://regal-help.herokuapp.com/"
-        target="_blank"
-        rel="noreferrer"
-      >
-        <Image
-          src={"/images/portfolio/regal.png"}
-          width={1000}
-          height={500}
-          alt="Regal landing page"
-        />
-      </a>
-    </section>
+    </div>
     //   <section className="h-auto grid grid-cols-1 md:grid-cols-2 justify-items-center mb-7 gap-5">
     //     <a
     //       href="https://www.pickupapiece.com/"

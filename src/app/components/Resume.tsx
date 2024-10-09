@@ -1,7 +1,9 @@
 export default function Resume() {
   return (
-    <section id="resume" className="scroll-mt-36">
-      <div></div>
-    </section>
+    <div id="resume" className="h-screen scroll-mt-32">
+      <h2 className="text-center text-slate-300 font-bold text-5xl mt-20">
+        Resume
+      </h2>
+    </div>
   );
 }
