@@ -2,12 +2,12 @@ import Link from "next/link";
 
 export default function Header() {
   return (
-    <header className="sticky top-0 z-10">
-      <nav className="fixed w-screen px-4 lg:px-6 py-2.5">
-        <ul className="flex justify-center sm:space-x-8 md:space-x-10 lg:space-x-20 list-reset text-slate-300 pt-6">
-          <li>
+    <header className="sticky z-50">
+      <nav className="fixed w-screen pt-6">
+        <ul className="flex justify-center rounded-full sm:space-x-8 md:space-x-10 lg:space-x-20 list-reset text-slate-300">
+          <li draggable="false">
             <Link
-              href="#about"
+              href="/#about"
               className="rounded-full p-3 hover:bg-slate-800/25 backdrop-blur-sm font-bold transition-all duration-200"
             >
               About
@@ -15,7 +15,7 @@ export default function Header() {
           </li>
           <li>
             <Link
-              href="#portfolio"
+              href="/#portfolio"
               className="rounded-full p-3 hover:bg-slate-800/25 backdrop-blur-sm font-bold transition-all duration-200"
             >
               Projects
@@ -23,7 +23,7 @@ export default function Header() {
           </li>
           <li>
             <Link
-              href="#resume"
+              href="/#resume"
               className="rounded-full p-3 hover:bg-slate-800/25 backdrop-blur-sm font-bold transition-all duration-200"
             >
               Resume
@@ -31,7 +31,7 @@ export default function Header() {
           </li>
           <li>
             <Link
-              href="#contact"
+              href="/#contact"
               className="rounded-full p-3 hover:bg-slate-800/25 backdrop-blur-sm font-bold transition-all duration-200"
             >
               Contact
