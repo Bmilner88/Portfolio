@@ -25,3 +25,7 @@ body {
     text-wrap: balance;
   }
 }
+
+.section {
+  @apply h-[calc(100vh-8rem)]
+}

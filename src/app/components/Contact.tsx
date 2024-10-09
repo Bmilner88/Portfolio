@@ -84,7 +84,7 @@ export default function Contact() {
         </p>
       </div>
       <div className="">
-        <h3 className="text-3xl font-semibold">Send Me An Email</h3>
+        {/* <h3 className="text-3xl font-semibold md:mb-2">Send Me An Email</h3> */}
         <form className="w-3/4 xl:w-full max-w-lg bg-slate-100 rounded px-8 pt-6 pb-8 mb-4">
           <div className="flex flex-wrap -mx-3 mb-6">
             <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
