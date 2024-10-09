@@ -1,6 +1,6 @@
 export default function Footer() {
   return (
-    <div className="flex place-content-center gap-x-10 py-3">
+    <div className="flex place-content-center gap-x-10 py-3 bg-slate-800">
       <a
         href="https://www.linkedin.com/in/bmilner88"
         target="_blank"

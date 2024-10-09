@@ -3,7 +3,7 @@ import { Hero, Portfolio, Resume, Contact } from "@/app/components";
 
 export default function Home() {
   return (
-    <div className="bg-slate-800">
+    <div className="bg-slate-700">
       <Hero />
       <h2
         id="portfolio"
