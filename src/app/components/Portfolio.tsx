@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Portfolio() {
   return (
-    <section className="h-auto grid grid-cols-1 md:grid-cols-2 justify-items-center mb-7 gap-5">
+    <section id="portfolio" className="h-auto grid grid-cols-1 md:grid-cols-2 justify-items-center mb-7 gap-5 scroll-mt-36">
       <div className="relative text-center">
         <a
           href="https://www.pickupapiece.com/"

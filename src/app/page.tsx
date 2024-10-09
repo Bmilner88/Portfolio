@@ -6,7 +6,6 @@ export default function Home() {
     <div className="flex-1 overflow-auto">
       <Hero />
       <h2
-        id="portfolio"
         className="text-center text-slate-300 font-bold text-5xl"
       >
         Portfolio
