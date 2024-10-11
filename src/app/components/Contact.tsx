@@ -70,23 +70,22 @@ export default function Contact() {
   };
 
   return (
-    <div id="contact" className="h-screen scroll-mt-20">
-      <h2 className="text-center text-slate-300 font-bold text-5xl">Contact</h2>
+    <div id="contact" className="h-[calc(100vh-7rem)] scroll-mt-28">
       <div className="pt-28 grid sm:grid-cols-2 sm:gap-20">
         <div className="flex justify-center sm:justify-end my-auto">
-          <div className="text-2xl text-justify w-full mx-20 sm:w-1/2">
+          <div className="text-2xl text-center w-full mx-20 sm:w-1/2">
             <p>
-              If you're interested in hiring me, I'd love to hear from you! 🤝
+              If you're interested in hiring me, I'd love to hear from you!🤝
             </p>
             <br />
             <p>
               Don't forget to include your name and email address. I will get
               back to you as soon as possible. I look forward to connecting with
-              you soon! 👋
+              you soon!👋
             </p>
           </div>
         </div>
-        <form className="w-3/4 xl:w-full max-w-lg bg-slate-100 rounded px-8 pt-6 pb-8 mb-4">
+        <form className="w-3/4 xl:w-full max-w-lg bg-slate-100 rounded px-8 pt-6 pb-8">
           <h3 className="flex justify-center text-3xl font-semibold mb-6 text-gray-700">
             Send Me An Email! 📨
           </h3>

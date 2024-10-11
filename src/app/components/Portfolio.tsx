@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Portfolio() {
   return (
-    <div id="portfolio" className="h-screen scroll-mt-20">
+    <div id="portfolio" className="h-[calc(100vh-5rem)] scroll-mt-20">
       <h2 className="text-center text-slate-300 font-bold text-5xl mt-20">
         Portfolio
       </h2>
