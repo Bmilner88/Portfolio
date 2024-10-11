@@ -2,16 +2,18 @@ import Image from "next/image";
 
 export default function Hero() {
   return (
-    <div id="about" className="h-[calc(100vh-8rem)] mt-32 scroll-mt-32">
-      <div className="h-full w-full flex items-center">
+    <div id="about" className="h-screen pt-32 scroll-mt-32 bg-cover bg-[url('/images/background/lc-river-1.jpg')] shadow-2xl">
+      <div className="xl:pt-32 grid sm:grid-cols-5">
+        <div>{/* EMPTY DIV FOR STYLING */}</div>
+        <div className="col-span-3 flex flex-wrap xl:flex-nowrap items-center justify-center gap-6 p-10 mb-32 rounded-3xl bg-slate-100 bg-opacity-65 backdrop-blur-sm">
           <Image
-            src="/images/main/ben-milner.jpg"
-            width={300}
-            height={300}
+            src="/images/main/ben-milner.png"
+            width={500}
+            height={500}
             alt="Ben Milner"
-            className="w-1/4 rounded-full bg-gradient-to-br from-teal-400 to-blue-400 p-1 shadow-xl shadow-slate-900"
+            className="rounded-full bg-gradient-to-br from-teal-400 to-blue-400 p-1 shadow-lg shadow-slate-900"
           />
-          <p className="w-1/4">
+          <p className="text-gray-800 font-semibold">
             Hi there! My name is Ben Milner, and I am seeking employment in the
             field of Web Development. I am well qualified, having completed a
             Full-Stack Web Development Boot Camp through the University of Utah
@@ -24,6 +26,8 @@ export default function Hero() {
             skiing, hiking and playing lots of games. I love traveling to new
             places and learning new things.
           </p>
+        </div>
+        <div>{/* EMPTY DIV FOR STYLING */}</div>
       </div>
     </div>
   );

@@ -4,11 +4,11 @@ export default function Header() {
   return (
     <header className="sticky z-50">
       <nav className="fixed w-screen pt-6">
-        <ul className="flex justify-center rounded-full sm:space-x-8 md:space-x-10 lg:space-x-20 list-reset text-slate-300">
+        <ul className="flex justify-center rounded-full sm:space-x-8 md:space-x-10 lg:space-x-20 list-reset text-zinc-300">
           <li draggable="false">
             <Link
               href="/#about"
-              className="rounded-full p-3 hover:bg-slate-800/25 backdrop-blur-sm font-bold transition-all duration-200"
+              className="rounded-full p-3 hover:bg-slate-800/25 backdrop-blur-md font-bold transition-all duration-200"
             >
               About
             </Link>
@@ -16,7 +16,7 @@ export default function Header() {
           <li>
             <Link
               href="/#portfolio"
-              className="rounded-full p-3 hover:bg-slate-800/25 backdrop-blur-sm font-bold transition-all duration-200"
+              className="rounded-full p-3 hover:bg-slate-800/25 backdrop-blur-md font-bold transition-all duration-200"
             >
               Projects
             </Link>
@@ -24,7 +24,7 @@ export default function Header() {
           <li>
             <Link
               href="/#resume"
-              className="rounded-full p-3 hover:bg-slate-800/25 backdrop-blur-sm font-bold transition-all duration-200"
+              className="rounded-full p-3 hover:bg-slate-800/25 backdrop-blur-md font-bold transition-all duration-200"
             >
               Resume
             </Link>
@@ -32,7 +32,7 @@ export default function Header() {
           <li>
             <Link
               href="/#contact"
-              className="rounded-full p-3 hover:bg-slate-800/25 backdrop-blur-sm font-bold transition-all duration-200"
+              className="rounded-full p-3 hover:bg-slate-800/25 backdrop-blur-md font-bold transition-all duration-200"
             >
               Contact
             </Link>
