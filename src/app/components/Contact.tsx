@@ -70,7 +70,7 @@ export default function Contact() {
   };
 
   return (
-    <div id="contact" className="h-[calc(100vh-7rem)] scroll-mt-28">
+    <div id="contact" className="h-[calc(100vh-7rem)] scroll-mt-28 mt-28">
       <div className="pt-28 grid sm:grid-cols-2 sm:gap-20">
         <div className="flex justify-center sm:justify-end my-auto">
           <div className="text-2xl text-center w-full mx-20 sm:w-1/2">
