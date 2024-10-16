@@ -4,7 +4,7 @@ export default function Header() {
   return (
     <header className="sticky z-50">
       <nav className="fixed w-screen pt-6">
-        <ul className="flex justify-center rounded-full sm:space-x-8 md:space-x-10 lg:space-x-20 list-reset text-zinc-300">
+        <ul className="flex justify-center rounded-full space-x-2 sm:space-x-8 md:space-x-10 lg:space-x-20 list-reset text-zinc-300">
           <li draggable="false">
             <Link
               href="/#about"
