@@ -1,5 +1,3 @@
-import Link from "next/link";
-
 export default function Resume() {
   return (
     <div id="resume" className="h-[calc(100vh-5rem)] scroll-mt-20">

@@ -1,5 +1,5 @@
 "use client";
-import { useState } from "react"
+import { useState } from "react";
 
 export default function Contact() {
   const [formState, setFormState] = useState({
@@ -14,7 +14,14 @@ export default function Contact() {
     loading: false,
   });
 
-  const handleChange = (e: { target: { name: any; value: any } }) => {
+  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setFormState({
+      ...formState,
+      [e.target.name]: e.target.value,
+    });
+  };
+
+  const handleMessageChange = (e: React.ChangeEvent<HTMLTextAreaElement>) => {
     setFormState({
       ...formState,
       [e.target.name]: e.target.value,
@@ -75,13 +82,15 @@ export default function Contact() {
         <div className="flex justify-center sm:justify-end my-auto">
           <div className="text-2xl text-center w-full mx-20 sm:w-1/2">
             <p>
-              If you're interested in hiring me, I'd love to hear from you!🤝
+              {
+                "If you're interested in hiring me, I'd love to hear from you!🤝"
+              }
             </p>
             <br />
             <p>
-              Don't forget to include your name and email address. I will get
-              back to you as soon as possible. I look forward to connecting with
-              you soon!👋
+              {
+                "Don't forget to include your name and email address. I will get back to you as soon as possible. I look forward to connecting with you soon!👋"
+              }
             </p>
           </div>
         </div>
@@ -104,7 +113,7 @@ export default function Contact() {
                 type="text"
                 placeholder="John Doe"
                 value={formState.name}
-                onChange={handleChange}
+                onChange={handleInputChange}
               />
               <p className="hidden text-red-500 text-xs italic">
                 Please fill out this field.
@@ -124,7 +133,7 @@ export default function Contact() {
                 type="email"
                 placeholder="name@example.com"
                 value={formState.email}
-                onChange={handleChange}
+                onChange={handleInputChange}
               />
             </div>
           </div>
@@ -143,7 +152,7 @@ export default function Contact() {
                 rows={8}
                 placeholder="Message..."
                 value={formState.message}
-                onChange={handleChange}
+                onChange={handleMessageChange}
               />
             </div>
           </div>
