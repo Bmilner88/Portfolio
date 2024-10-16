@@ -1,4 +1,5 @@
 import Image from "next/image";
+import main from "../../../public/images/main/ben-milner.png"
 
 export default function Hero() {
   return (
@@ -7,11 +8,9 @@ export default function Hero() {
         <div>{/* EMPTY DIV FOR STYLING */}</div>
         <div className="col-span-3 flex flex-wrap xl:flex-nowrap items-center justify-center gap-6 p-10 mb-32 rounded-3xl bg-slate-100 bg-opacity-65 backdrop-blur-sm">
           <Image
-            src="/images/main/ben-milner.png"
-            width={500}
-            height={500}
+            src={main}
             alt="Ben Milner"
-            className="rounded-full bg-gradient-to-br from-teal-400 to-blue-400 p-1 shadow-lg shadow-slate-900"
+            className="rounded-full w-3/4 bg-gradient-to-br from-teal-400 to-blue-400 p-1 shadow-lg shadow-slate-900"
           />
           <p className="text-gray-800 font-semibold">
             Hi there! My name is Ben Milner, and I am seeking employment in the
