@@ -4,12 +4,10 @@
 
 This is my professional portfolio using React.
 
-* <a href="https://bm-professional-portfolio.onrender.com" target="_blank">Render Deployment</a>
-
 - Built With:
-    * JavaScript
-    * Node.js
-    * React.js
-    * Nodemailer
+    * Next.js
+    * Tailwind
+
+    Deployed on Render
 
 ![screenshot](./src/assets/images/screenshot.png)
