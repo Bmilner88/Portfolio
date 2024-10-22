@@ -1,7 +1,17 @@
-//"use client";
+"use client";
 //import { useState } from "react";
 
 export default function Contact() {
+  const handleFormSubmit = async (event) => {
+    event.preventDefault();
+    const formData = new FormData(event.target);
+    await fetch('/__forms.html', {
+      method: 'POST',
+      headers: {'Content-Type': 'application/x-www-form-urlencoded'},
+      body: new URLSearchParams(formData).toString()
+    });
+    
+  }
   // const [formState, setFormState] = useState({
   //   name: "",
   //   email: "",
@@ -99,6 +109,7 @@ export default function Contact() {
           method="POST"
           data-netlify="true"
           className="w-3/4 xl:w-full max-w-lg bg-slate-100 rounded px-8 pt-6 pb-8"
+          onSubmit={handleFormSubmit}
         >
           <input type="hidden" name="form-name" value="contact" />
           <h3 className="flex justify-center text-3xl font-semibold mb-6 text-gray-700">
