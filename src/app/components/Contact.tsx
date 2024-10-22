@@ -1,80 +1,80 @@
-"use client";
-import { useState } from "react";
+//"use client";
+//import { useState } from "react";
 
 export default function Contact() {
-  const [formState, setFormState] = useState({
-    name: "",
-    email: "",
-    message: "",
-  });
+  // const [formState, setFormState] = useState({
+  //   name: "",
+  //   email: "",
+  //   message: "",
+  // });
 
-  const [message, setMessage] = useState({
-    sent: false,
-    text: "",
-    loading: false,
-  });
+  // const [message, setMessage] = useState({
+  //   sent: false,
+  //   text: "",
+  //   loading: false,
+  // });
 
-  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    setFormState({
-      ...formState,
-      [e.target.name]: e.target.value,
-    });
-  };
+  // const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+  //   setFormState({
+  //     ...formState,
+  //     [e.target.name]: e.target.value,
+  //   });
+  // };
 
-  const handleMessageChange = (e: React.ChangeEvent<HTMLTextAreaElement>) => {
-    setFormState({
-      ...formState,
-      [e.target.name]: e.target.value,
-    });
-  };
+  // const handleMessageChange = (e: React.ChangeEvent<HTMLTextAreaElement>) => {
+  //   setFormState({
+  //     ...formState,
+  //     [e.target.name]: e.target.value,
+  //   });
+  // };
 
-  const handleSubmit = async (e: { preventDefault: () => void }) => {
-    e.preventDefault();
-    if (!formState.name || !formState.email || !formState.message) {
-      setMessage({
-        ...message,
-        sent: true,
-        text: "Please fill in all the fields!",
-      });
-      return;
-    } else {
-      setMessage({
-        sent: true,
-        text: "Sending",
-        loading: true,
-      });
-      await fetch("https://bm-portfolio-api.onrender.com/api/send/", {
-        method: "POST",
-        headers: {
-          "Content-type": "application/json",
-        },
-        body: JSON.stringify(formState),
-      })
-        .then((res) => res.json())
-        .then(async (data) => {
-          const resData = await data;
-          if (resData.status === "success") {
-            setMessage({
-              sent: true,
-              text: "Message Sent!",
-              loading: false,
-            });
+  // const handleSubmit = async (e: { preventDefault: () => void }) => {
+  //   e.preventDefault();
+  //   if (!formState.name || !formState.email || !formState.message) {
+  //     setMessage({
+  //       ...message,
+  //       sent: true,
+  //       text: "Please fill in all the fields!",
+  //     });
+  //     return;
+  //   } else {
+  //     setMessage({
+  //       sent: true,
+  //       text: "Sending",
+  //       loading: true,
+  //     });
+  //     await fetch("https://bm-portfolio-api.onrender.com/api/send/", {
+  //       method: "POST",
+  //       headers: {
+  //         "Content-type": "application/json",
+  //       },
+  //       body: JSON.stringify(formState),
+  //     })
+  //       .then((res) => res.json())
+  //       .then(async (data) => {
+  //         const resData = await data;
+  //         if (resData.status === "success") {
+  //           setMessage({
+  //             sent: true,
+  //             text: "Message Sent!",
+  //             loading: false,
+  //           });
 
-            setFormState({
-              name: "",
-              email: "",
-              message: "",
-            });
-          } else if (resData.status === "fail") {
-            setMessage({
-              sent: true,
-              text: `Message failed to send - Code: ${data.message.code}`,
-              loading: false,
-            });
-          }
-        });
-    }
-  };
+  //           setFormState({
+  //             name: "",
+  //             email: "",
+  //             message: "",
+  //           });
+  //         } else if (resData.status === "fail") {
+  //           setMessage({
+  //             sent: true,
+  //             text: `Message failed to send - Code: ${data.message.code}`,
+  //             loading: false,
+  //           });
+  //         }
+  //       });
+  //   }
+  // };
 
   return (
     <div id="contact" className="h-[calc(100vh-7rem)] scroll-mt-28 mt-28">
@@ -94,7 +94,13 @@ export default function Contact() {
             </p>
           </div>
         </div>
-        <form className="w-3/4 xl:w-full max-w-lg bg-slate-100 rounded px-8 pt-6 pb-8">
+        <form
+          name="contact"
+          method="POST"
+          data-netlify="true"
+          className="w-3/4 xl:w-full max-w-lg bg-slate-100 rounded px-8 pt-6 pb-8"
+        >
+          <input type="hidden" name="form-name" value="contact" />
           <h3 className="flex justify-center text-3xl font-semibold mb-6 text-gray-700">
             Send Me An Email! 📨
           </h3>
@@ -112,8 +118,8 @@ export default function Contact() {
                 name="name"
                 type="text"
                 placeholder="John Doe"
-                value={formState.name}
-                onChange={handleInputChange}
+                // value={formState.name}
+                // onChange={handleInputChange}
               />
               <p className="hidden text-red-500 text-xs italic">
                 Please fill out this field.
@@ -132,8 +138,8 @@ export default function Contact() {
                 name="email"
                 type="email"
                 placeholder="name@example.com"
-                value={formState.email}
-                onChange={handleInputChange}
+                // value={formState.email}
+                // onChange={handleInputChange}
               />
             </div>
           </div>
@@ -151,12 +157,12 @@ export default function Contact() {
                 name="message"
                 rows={8}
                 placeholder="Message..."
-                value={formState.message}
-                onChange={handleMessageChange}
+                // value={formState.message}
+                // onChange={handleMessageChange}
               />
             </div>
           </div>
-          <div className="flex justify-center mb-3">
+          {/* <div className="flex justify-center mb-3">
             {message.sent && message.loading && (
               <div id="message-sent" className="text-gray-700">
                 <div style={{ display: "flex", alignItems: "center" }}>
@@ -193,12 +199,12 @@ export default function Contact() {
                 <p>{message.text}</p>
               </div>
             )}
-          </div>
+          </div> */}
           <div className="flex justify-center">
             <button
               className="bg-gradient-to-r from-teal-400 to-blue-400 text-white font-bold uppercase text-sm px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 transition duration-200 hover:scale-110"
               type="button"
-              onClick={handleSubmit}
+              //onClick={handleSubmit}
             >
               Send
             </button>
