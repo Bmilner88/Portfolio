@@ -22,7 +22,7 @@ export default async function handler(req, res) {
       text: `
       ${message}
       
-      Email: ${email}`
+      Email: ${email}`,
     };
 
     const send = await transporter.sendMail(mailOptions);
