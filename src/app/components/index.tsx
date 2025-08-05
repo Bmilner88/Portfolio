@@ -1,6 +1,6 @@
 import Contact from "./Contact";
-import Hero from "./Hero";
-import Portfolio from "./Portfolio";
+import About from "./About";
+import Projects from "./Projects";
 import Resume from "./Resume";
 
-export { Contact, Hero, Portfolio, Resume };
+export { Contact, About, Projects, Resume };

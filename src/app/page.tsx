@@ -1,11 +1,10 @@
-import React from "react";
-import { Hero, Portfolio, Resume, Contact } from "@/app/components";
+import { About, Contact, Projects, Resume } from "@/app/components";
 
-export default function Home() {
+export default function App() {
   return (
-    <div className="scroll-smooth flex-1 overflow-auto">
-      <Hero />
-      <Portfolio />
+    <div className="scroll-smooth flex-1 overflow-auto bg-base-200">
+      <About />
+      <Projects />
       <Resume />
       <Contact />
     </div>
