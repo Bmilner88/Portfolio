@@ -1,13 +1,5 @@
-# React Portfolio
-[![Netlify Status](https://api.netlify.com/api/v1/badges/4b293aaa-a22c-49e5-a4aa-74d31f2fb3c9/deploy-status)](https://app.netlify.com/sites/bm-professional-portfolio/deploys)
-## Description
-
-This is my professional portfolio using React.
-
-- Built With:
-    * Next.js
-    * Tailwind
-
-    Deployed on Render
-
-![screenshot](./src/assets/images/screenshot.png)
+# Professional Portfolio
+## This is my personal Portfolio built using Next.js deployed on Vercel.
+## Built With
+![](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
+![](https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)

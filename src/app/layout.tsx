@@ -1,25 +1,23 @@
 import type { Metadata } from "next";
-import localFont from "next/font/local";
-import { Analytics } from "@vercel/analytics/react";
-import "@/ui/globals.css";
+import { Geist, Geist_Mono } from "next/font/google";
+import "./globals.css";
 
-import Header from "@/ui/Header";
-import Footer from "@/ui/Footer";
+import Header from "@/app/ui/Header";
+import Footer from "@/app/ui/Footer";
 
-const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
+const geistSans = Geist({
   variable: "--font-geist-sans",
-  weight: "100 900",
+  subsets: ["latin"],
 });
-const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
+
+const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
-  weight: "100 900",
+  subsets: ["latin"],
 });
 
 export const metadata: Metadata = {
   title: "Ben Milner | Portfolio",
-  description: "Personal professional portfolio for Ben Milner.",
+  description: "Portfolio site for Ben Milner",
 };
 
 export default function RootLayout({
@@ -28,13 +26,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html className="scroll-smooth" lang="en">
+    <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-slate-700 flex flex-col tracking-wide`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <Header />
         {children}
-        <Analytics />
         <Footer />
       </body>
     </html>
