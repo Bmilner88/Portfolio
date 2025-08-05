@@ -7,25 +7,14 @@ export default function Contact() {
     email: "",
     message: "",
   });
-  // const [formErrors, setFormErrors] = useState({
-  //   name: "",
-  //   email: "",
-  //   message: "",
-  // });
+
   const [status, setStatus] = useState({
     loading: false,
     error: "",
     success: false,
   });
 
-  // Validate form fields before submission
-  // const validateForm = () => {
-  //   let valid = true;
-  //   const errors = {
-  //     name: "",
-  //     email: "",
-  //     message: "",
-  //   };
+  const [formChanged, setFormChanged] = useState(false);
 
   const handleChange = (e: any) => {
     const { name, value } = e.target;
@@ -35,11 +24,9 @@ export default function Contact() {
       [name]: value,
     }));
 
-    // Clear any existing errors for the field
-    // setFormErrors((prevErrors) => ({
-    //   ...prevErrors,
-    //   [name]: "",
-    // }));
+    setStatus({ loading: false, error: "", success: false });
+
+    setFormChanged(true);
   };
 
   const handleSubmit = useCallback(
@@ -61,13 +48,8 @@ export default function Contact() {
           console.log("Send Success");
         }
 
-        setFormState({
-          name: "",
-          email: "",
-          message: "",
-        });
-
         setStatus({ loading: false, error: "", success: true });
+        setFormChanged(false);
       } catch (err) {
         console.error("Error sending email", err);
         setStatus({
@@ -134,9 +116,29 @@ export default function Contact() {
                 />
                 <div className="validator-hint">Enter a message</div>
 
-                <button className="btn btn-neutral mt-4" type="submit">
-                  Send Message
+                <button
+                  className="btn btn-accent mt-4"
+                  type="submit"
+                  disabled={!formChanged}
+                >
+                  {status.loading ? (
+                    <span className="loading loading-dots loading-sm"></span>
+                  ) : (
+                    "Send Message"
+                  )}
                 </button>
+
+                {!status.error && (
+                  <p className="text-red-500 text-xs italic text-center">
+                    {status.error}
+                  </p>
+                )}
+
+                {status.success && (
+                  <p className="text-green-500 text-xs italic text-center">
+                    Message Sent Successfully!
+                  </p>
+                )}
               </form>
             </div>
           </div>
