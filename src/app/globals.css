@@ -3,6 +3,7 @@
 @plugin "daisyui";
 
 
+
 @plugin "daisyui/theme" {
   name: "portfolio";
   default: true;
@@ -14,20 +15,20 @@
   --color-base-content: oklch(98% 0.003 247.858);
   --color-primary: oklch(84% 0.143 164.978);
   --color-primary-content: oklch(26% 0.051 172.552);
-  --color-secondary: oklch(0% 0 0);
-  --color-secondary-content: oklch(100% 0 0);
-  --color-accent: oklch(83% 0.145 321.434);
-  --color-accent-content: oklch(29% 0.136 325.661);
+  --color-secondary: oklch(83% 0.145 321.434);
+  --color-secondary-content: oklch(29% 0.136 325.661);
+  --color-accent: oklch(80% 0.105 251.813);
+  --color-accent-content: oklch(28% 0.091 267.935);
   --color-neutral: oklch(44% 0.011 73.639);
   --color-neutral-content: oklch(98% 0.001 106.423);
-  --color-info: oklch(54% 0.245 262.881);
-  --color-info-content: oklch(97% 0.014 254.604);
-  --color-success: oklch(62% 0.194 149.214);
-  --color-success-content: oklch(98% 0.018 155.826);
+  --color-info: oklch(71% 0.203 305.504);
+  --color-info-content: oklch(29% 0.149 302.717);
+  --color-success: oklch(79% 0.209 151.711);
+  --color-success-content: oklch(26% 0.065 152.934);
   --color-warning: oklch(66% 0.179 58.318);
-  --color-warning-content: oklch(98% 0.022 95.277);
-  --color-error: oklch(59% 0.249 0.584);
-  --color-error-content: oklch(97% 0.014 343.198);
+  --color-warning-content: oklch(27% 0.077 45.635);
+  --color-error: oklch(70% 0.191 22.216);
+  --color-error-content: oklch(25% 0.092 26.042);
   --radius-selector: 0.5rem;
   --radius-field: 2rem;
   --radius-box: 0.5rem;
