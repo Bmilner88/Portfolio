@@ -117,7 +117,7 @@ export default function Contact() {
                 <div className="validator-hint">Enter a message</div>
 
                 <button
-                  className="btn btn-accent mt-4"
+                  className="btn btn-secondary mt-4"
                   type="submit"
                   disabled={!formChanged}
                 >
@@ -129,13 +129,13 @@ export default function Contact() {
                 </button>
 
                 {!status.error && (
-                  <p className="text-red-500 text-xs italic text-center">
+                  <p className="text-warning text-xs italic text-center">
                     {status.error}
                   </p>
                 )}
 
                 {status.success && (
-                  <p className="text-green-500 text-xs italic text-center">
+                  <p className="text-success text-xs italic text-center">
                     Message Sent Successfully!
                   </p>
                 )}

@@ -24,6 +24,11 @@ export default function Projects() {
                 like-minded individuals dedicated to preparing for life's many
                 troubles, big or small.
               </p>
+              <ul className="pb-4 flex gap-2">
+                <li className="badge badge-soft badge-accent">Next.js</li>
+                <li className="badge badge-soft badge-accent">DaisyUI</li>
+                <li className="badge badge-soft badge-accent">PostgreSQL</li>
+              </ul>
               <Link
                 href={"https://www.pickupapiece.com/"}
                 target="_blank"
@@ -70,6 +75,11 @@ export default function Projects() {
                 allows them to easily submit requests for movies, TV shows, or
                 other content they would like added to our shared Plex server.
               </p>
+              <ul className="pb-4 flex gap-2">
+                <li className="badge badge-soft badge-accent">Next.js</li>
+                <li className="badge badge-soft badge-accent">DaisyUI</li>
+                <li className="badge badge-soft badge-accent">PostgreSQL</li>
+              </ul>
               <div className="tooltip tooltip-bottom" data-tip="Coming Soon">
                 <button className="btn btn-primary" disabled>
                   Demo
