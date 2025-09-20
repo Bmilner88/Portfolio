@@ -4,7 +4,8 @@ import Link from "next/link";
 export default function Projects() {
   return (
     <div
-      className="min-h-screen flex items-center justify-center projects"
+      id="projects"
+      className="min-h-screen flex items-center justify-center"
     >
       <div className="flex w-3/4 flex-col gap-10">
         <div className="hero">

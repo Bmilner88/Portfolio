@@ -3,7 +3,10 @@ import Link from "next/link";
 
 export default function Resume() {
   return (
-    <div className="min-h-screen flex flex-wrap justify-center items-center gap-8 mt-14 lg:mt-0 resume">
+    <div
+      id="resume"
+      className="min-h-screen flex flex-wrap justify-center items-center gap-8 mt-14 lg:mt-0"
+    >
       <ul className="list bg-base-300 rounded-box shadow-md lg:w-2/5">
         <li className="p-4 pb-2 text-xs opacity-60 tracking-wide">
           Previous Experience
