@@ -38,7 +38,7 @@ export default function Header() {
           className="btn btn-ghost"
           onClick={() => {
             document
-              .querySelector(".about")
+              .querySelector("#about")
               ?.scrollIntoView({ behavior: "smooth" });
           }}
         >
@@ -48,7 +48,7 @@ export default function Header() {
           className="btn btn-ghost"
           onClick={() => {
             document
-              .querySelector(".projects")
+              .querySelector("#projects")
               ?.scrollIntoView({ behavior: "smooth" });
           }}
         >
@@ -58,7 +58,7 @@ export default function Header() {
           className="btn btn-ghost"
           onClick={() => {
             document
-              .querySelector(".resume")
+              .querySelector("#resume")
               ?.scrollIntoView({ behavior: "smooth" });
           }}
         >
@@ -68,7 +68,7 @@ export default function Header() {
           className="btn btn-ghost"
           onClick={() => {
             document
-              .querySelector(".contact")
+              .querySelector("#contact")
               ?.scrollIntoView({ behavior: "smooth" });
           }}
         >
