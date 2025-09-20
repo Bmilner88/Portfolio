@@ -34,18 +34,46 @@ export default function Header() {
     >
       <div className="navbar-start"></div>
       <div className="navbar-center gap-2 md:gap-8">
-        <Link href="#about" className="btn btn-ghost">
+        <button
+          className="btn btn-ghost"
+          onClick={() => {
+            document
+              .querySelector(".about")
+              ?.scrollIntoView({ behavior: "smooth" });
+          }}
+        >
           About
-        </Link>
-        <Link href="#projects" className="btn btn-ghost">
+        </button>
+        <button
+          className="btn btn-ghost"
+          onClick={() => {
+            document
+              .querySelector(".projects")
+              ?.scrollIntoView({ behavior: "smooth" });
+          }}
+        >
           Projects
-        </Link>
-        <Link href="#resume" className="btn btn-ghost">
+        </button>
+        <button
+          className="btn btn-ghost"
+          onClick={() => {
+            document
+              .querySelector(".resume")
+              ?.scrollIntoView({ behavior: "smooth" });
+          }}
+        >
           Resume
-        </Link>
-        <Link href="#contact" className="btn btn-ghost">
+        </button>
+        <button
+          className="btn btn-ghost"
+          onClick={() => {
+            document
+              .querySelector(".contact")
+              ?.scrollIntoView({ behavior: "smooth" });
+          }}
+        >
           Contact
-        </Link>
+        </button>
       </div>
       <div className="navbar-end"></div>
     </div>
